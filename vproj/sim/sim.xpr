@@ -60,7 +60,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zybo-z7-10"/>
-    <Option Name="WTXSimLaunchSim" Val="25"/>
+    <Option Name="WTXSimLaunchSim" Val="26"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -91,140 +91,140 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../ip/core/src/mem/axi/cache.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/mem/axi/cache.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/core/components/pipeline/check.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/core/components/pipeline/check.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/peripherals/clint.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/peripherals/clint.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/core/core.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/core/core.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/core/components/pipeline/decode.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/core/components/pipeline/decode.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/core/components/pipeline/exec.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/core/components/pipeline/exec.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/core/components/pipeline/fetch.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/core/components/pipeline/fetch.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/mem/axi/interconnect.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/mem/axi/interconnect.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/core/components/main.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/core/components/main.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/mem/axi/mem.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/mem/axi/mem.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/core/components/mmu.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/core/components/mmu.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/core/components/pipeline/mread.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/core/components/pipeline/mread.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/peripherals/plic.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/peripherals/plic.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/mem/utils/ram/ram_dualport.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/mem/utils/ram/ram_dualport.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/mem/utils/rom/rom_dualport.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/mem/utils/rom/rom_dualport.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/core/components/pipeline/register/std_csr.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/core/components/pipeline/register/std_csr.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/core/components/pipeline/register/std_rv32i.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/core/components/pipeline/register/std_rv32i.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/mem/axi/translate.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/mem/axi/translate.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/core/components/pipeline/trap.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/core/components/pipeline/trap.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/src/cpu.v">
+      <File Path="$PPRDIR/../../ip/cpu/src/cpu.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -244,190 +244,48 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
-      <File Path="$PPRDIR/../../ip/core/test/setup/with_axi_bus/axi_slave_BFM.v">
+      <File Path="$PPRDIR/../../ip/cpu/test/setup/with_axi_bus/axi_slave_BFM.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/test/setup/with_axi_bus/sync_fifo.v">
+      <File Path="$PPRDIR/../../ip/cpu/test/setup/with_axi_bus/sync_fifo.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/task.vh">
+      <File Path="$PPRDIR/../../ip/cpu/test/task/riscv_tests/task.vh">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/test/monitor/full/monitor.vh">
+      <File Path="$PPRDIR/../../ip/cpu/test/monitor/full/monitor.vh">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/test/setup/with_axi_bus/setup.vh">
+      <File Path="$PPRDIR/../../ip/cpu/test/setup/with_axi_bus/setup.vh">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/test/tb.v">
+      <File Path="$PPRDIR/../../ip/cpu/test/tb.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32si-p-dirty.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-sra.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32um-p-divu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzfh-p-recoding.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-illegal.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-sll.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-blt.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-jalr.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ua-v-amominu_w.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32si-p-ma_fetch.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uf-v-fdiv.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-jalr.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-slti.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-mcsr.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-lhu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-bgeu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-bgeu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-slti.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-csr.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-ma_fetch.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uf-p-fdiv.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-and.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uf-v-recoding.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32um-p-div.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-bne.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-srli.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-beq.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32si-p-scall.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-add.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ua-p-amomin_w.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-lui.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32um-v-divu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-lbu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-ori.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-sh-misaligned.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-simple.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-ori.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-sw-misaligned.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-slli.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-beq.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-xori.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-or.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-sub.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbb-v-min.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ud-v-fdiv.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-sb.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-andi.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ud-v-fmin.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzfh-v-fmin.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-srai.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-bge.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-jal.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-lb.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-srli.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-lw.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-addi.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbb-v-rori.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-slt.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-sltiu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-sw.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-shamt.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbs-v-binv.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-sh.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-srl.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32um-v-div.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzfh-v-fdiv.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-zicntr.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-sbreak.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzfh-v-recoding.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32si-p-sbreak.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-srl.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ua-v-amomin_w.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbs-p-binvi.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-auipc.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ua-p-amominu_w.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-sll.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbb-p-minu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-fence_i.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-lui.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-bltu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-sltu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbs-p-binv.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-sltiu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbb-v-minu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-lbu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbs-v-bseti.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-lw-misaligned.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-auipc.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-lhu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-xor.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uf-p-fmin.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-blt.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-ma_data.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-fence_i.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-bge.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-bltu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uf-v-fmin.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-slli.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-lh.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbs-p-bseti.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-sra.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-lh.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ud-p-fdiv.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ud-p-recoding.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-xor.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-sb.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32si-p-wfi.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-add.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-xori.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbs-p-bexti.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-or.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzfh-p-fdiv.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-addi.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-jal.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbb-p-min.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-bne.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-sub.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ud-p-fmin.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbs-p-bclri.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-simple.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbs-v-binvi.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-lw.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-andi.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-lb.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-scall.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbb-p-rori.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbs-v-bclri.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uf-p-recoding.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-ma_data.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-sh.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-p-sw.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-breakpoint.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-sltu.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-ma_addr.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzfh-p-fmin.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32uzbs-v-bexti.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-slt.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-srai.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32si-p-csr.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ud-v-recoding.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32mi-p-lh-misaligned.bin"/>
-      <File Path="$PPRDIR/../../ip/core/test/task/riscv_tests/resources/out/bin/rv32ui-v-and.bin"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="tb"/>
