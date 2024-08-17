@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../ip/cpu/test/task/riscv_tests" --include "../../../../../../ip/cpu/test/monitor/full" --include "../../../../../../ip/cpu/test/setup/with_axi_bus" \
+"../../../../../../ip/cpu/test/setup/with_axi_bus/axi_slave_BFM.v" \
+"../../../../../../ip/cpu/src/mem/axi/cache.v" \
+"../../../../../../ip/cpu/src/core/components/pipeline/check.v" \
+"../../../../../../ip/cpu/src/peripherals/clint.v" \
+"../../../../../../ip/cpu/src/core/core.v" \
+"../../../../../../ip/cpu/src/cpu.v" \
+"../../../../../../ip/cpu/src/core/components/pipeline/decode.v" \
+"../../../../../../ip/cpu/src/core/components/pipeline/exec.v" \
+"../../../../../../ip/cpu/src/core/components/pipeline/fetch.v" \
+"../../../../../../ip/cpu/src/mem/axi/interconnect.v" \
+"../../../../../../ip/cpu/src/core/components/main.v" \
+"../../../../../../ip/cpu/src/mem/axi/mem.v" \
+"../../../../../../ip/cpu/src/core/components/mmu.v" \
+"../../../../../../ip/cpu/src/core/components/pipeline/mread.v" \
+"../../../../../../ip/cpu/src/peripherals/plic.v" \
+"../../../../../../ip/cpu/src/mem/utils/ram/ram_dualport.v" \
+"../../../../../../ip/cpu/src/mem/utils/rom/rom_dualport.v" \
+"../../../../../../ip/cpu/src/core/components/pipeline/register/std_csr.v" \
+"../../../../../../ip/cpu/src/core/components/pipeline/register/std_rv32i.v" \
+"../../../../../../ip/cpu/test/setup/with_axi_bus/sync_fifo.v" \
+"../../../../../../ip/cpu/src/mem/axi/translate.v" \
+"../../../../../../ip/cpu/src/core/components/pipeline/trap.v" \
+"../../../../../../ip/cpu/test/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
