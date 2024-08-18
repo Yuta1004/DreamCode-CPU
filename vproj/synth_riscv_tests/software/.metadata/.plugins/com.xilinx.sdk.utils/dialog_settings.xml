@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="scw_hwspec" value="/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware"/>
+</section>
