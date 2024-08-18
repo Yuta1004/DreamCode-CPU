@@ -3,15 +3,14 @@ IMAGE := riscv/devenv
 SRCS := $(shell find src/*.c)
 OBJS := $(SRCS:.c=.o)
 
-hex: main
-	mkdir -p out
-	riscv64-unknown-elf-objcopy -O binary out/main out/bootrom.bin
-	riscv64-unknown-elf-objdump -d out/main > out/bootrom.dump
-	od -An -tx1 -w1 -v out/bootrom.bin > out/bootrom.mem
+GCC_OPTS := -O1 -march=rv32i_zicsr -mabi=ilp32
+LD_OPTS := -T link.ld -b elf32-littleriscv
 
-main: $(OBJS)
-	mkdir -p out
-	riscv64-unknown-elf-ld -b elf32-littleriscv $(OBJS) -T link.ld -o out/main
+bootrom.mem: $(OBJS)
+	riscv64-unknown-elf-ld $(LD_OPTS) -o out/bootrom $(OBJS)
+	riscv64-unknown-elf-objdump -d out/bootrom > out/bootrom.dump
+	riscv64-unknown-elf-objcopy -O binary out/bootrom out/bootrom.bin
+	od -An -tx4 -w4 -v out/bootrom.bin > out/bootrom.mem
 
 .c.o:
-	riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -c $< -o $@
+	riscv64-unknown-elf-gcc $(GCC_OPTS) -c $< -o $@
