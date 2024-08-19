@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Mon Aug 19 03:23:05 2024
+//Date        : Tue Aug 20 00:48:40 2024
 //Host        : plab-imac running 64-bit Ubuntu 22.04.4 LTS
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -36,7 +36,10 @@ module design_1_wrapper
     FIXED_IO_ps_srstb,
     SEG_RCLK,
     SEG_SER,
-    SEG_SRCLK);
+    SEG_SRCLK,
+    SWITCH,
+    UART_RX,
+    UART_TX);
   output COM_RCLK;
   output COM_SER;
   output COM_SRCLK;
@@ -64,6 +67,9 @@ module design_1_wrapper
   output SEG_RCLK;
   output SEG_SER;
   output SEG_SRCLK;
+  input [3:0]SWITCH;
+  input UART_RX;
+  output UART_TX;
 
   wire COM_RCLK;
   wire COM_SER;
@@ -92,6 +98,9 @@ module design_1_wrapper
   wire SEG_RCLK;
   wire SEG_SER;
   wire SEG_SRCLK;
+  wire [3:0]SWITCH;
+  wire UART_RX;
+  wire UART_TX;
 
   design_1 design_1_i
        (.COM_RCLK(COM_RCLK),
@@ -120,5 +129,8 @@ module design_1_wrapper
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
         .SEG_RCLK(SEG_RCLK),
         .SEG_SER(SEG_SER),
-        .SEG_SRCLK(SEG_SRCLK));
+        .SEG_SRCLK(SEG_SRCLK),
+        .SWITCH(SWITCH),
+        .UART_RX(UART_RX),
+        .UART_TX(UART_TX));
 endmodule

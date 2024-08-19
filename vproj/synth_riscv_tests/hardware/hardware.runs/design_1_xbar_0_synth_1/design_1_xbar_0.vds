@@ -1,0 +1,428 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Aug 19 17:35:59 2024
+# Process ID: 44439
+# Current directory: /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_xbar_0_synth_1
+# Command line: vivado -log design_1_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+# Log file: /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_xbar_0_synth_1/design_1_xbar_0.vds
+# Journal file: /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_xbar_0_synth_1/vivado.jou
+# Running On: plab-imac, OS: Linux, CPU Frequency: 4288.296 MHz, CPU Physical cores: 4, Host memory: 33593 MB
+#-----------------------------------------------------------
+source design_1_xbar_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1322.617 ; gain = 0.023 ; free physical = 22564 ; free virtual = 28551
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nakagami/Develop/project/DreamCode/cpu/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nakagami/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_0
+Command: synth_design -top design_1_xbar_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 44516
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/nakagami/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1986.848 ; gain = 369.801 ; free physical = 20590 ; free virtual = 26577
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1315.594; parent = 1147.985; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3000.961; parent = 1994.789; children = 1006.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_axi_crossbar' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_crossbar' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2238]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_si_transactor' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3799]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_addr_decoder' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_addr_decoder' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_26_axic_srl_fifo' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_26_ndeep_srl' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [/home/nakagami/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131794]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [/home/nakagami/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131794]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_26_ndeep_srl' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_26_axic_srl_fifo' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_arbiter_resp' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:1024]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_arbiter_resp' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:1024]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_si_transactor' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3799]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_si_transactor__parameterized0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3799]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_si_transactor__parameterized0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3799]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_splitter' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_splitter' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_wdata_router' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4735]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_26_axic_reg_srl_fifo' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:888]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_26_axic_reg_srl_fifo' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:888]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_wdata_router' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4735]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_26_axic_srl_fifo__parameterized0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_26_ndeep_srl__parameterized0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_26_ndeep_srl__parameterized0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_26_axic_srl_fifo__parameterized0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_wdata_mux' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4560]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_wdata_mux' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4560]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized1' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized1' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized2' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized2' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'reg_slice_mi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_26_axic_srl_fifo__parameterized1' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_26_axic_srl_fifo__parameterized1' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_wdata_mux__parameterized0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4560]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_wdata_mux__parameterized0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4560]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'reg_slice_mi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'reg_slice_mi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_26_axic_srl_fifo__parameterized2' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_26_axic_srl_fifo__parameterized2' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_wdata_mux__parameterized1' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4560]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_wdata_mux__parameterized1' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4560]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'reg_slice_mi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_decerr_slave' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3633]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_decerr_slave' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_addr_arbiter' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:422]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_addr_arbiter' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:422]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_crossbar' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2238]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_axi_crossbar' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[0].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[1].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[0].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[1].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[2].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[3].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_27_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_27_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_27_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_27_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_27_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_crossbar_v2_1_28_wdata_mux__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_crossbar_v2_1_28_wdata_mux__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ASELECT[0] in module axi_crossbar_v2_1_28_wdata_mux__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AVALID in module axi_crossbar_v2_1_28_wdata_mux__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_crossbar_v2_1_28_wdata_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_crossbar_v2_1_28_wdata_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ASELECT[0] in module axi_crossbar_v2_1_28_wdata_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AVALID in module axi_crossbar_v2_1_28_wdata_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_crossbar_v2_1_28_wdata_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_crossbar_v2_1_28_wdata_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ASELECT[0] in module axi_crossbar_v2_1_28_wdata_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AVALID in module axi_crossbar_v2_1_28_wdata_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_28_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_28_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_28_si_transactor__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_28_si_transactor__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_28_si_transactor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_28_si_transactor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[0] in module axi_crossbar_v2_1_28_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2173.754 ; gain = 556.707 ; free physical = 20843 ; free virtual = 26833
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3179.930; parent = 2173.758; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2185.629 ; gain = 568.582 ; free physical = 20847 ; free virtual = 26837
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3191.805; parent = 2185.633; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2185.629 ; gain = 568.582 ; free physical = 20847 ; free virtual = 26837
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3191.805; parent = 2185.633; children = 1006.172
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2191.566 ; gain = 0.000 ; free physical = 20894 ; free virtual = 26884
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2317.379 ; gain = 0.000 ; free physical = 20902 ; free virtual = 26892
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2317.379 ; gain = 0.000 ; free physical = 20902 ; free virtual = 26892
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/nakagami/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20954 ; free virtual = 26955
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20954 ; free virtual = 26955
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_xbar_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20954 ; free virtual = 26955
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_26_axic_reg_srl_fifo'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.write_cs_reg' in module 'axi_crossbar_v2_1_28_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                             1000 |                               10
+                     ONE |                             0010 |                               11
+                     TWO |                             0001 |                               01
+                  iSTATE |                             0100 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_26_axic_reg_srl_fifo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' using encoding 'one-hot' in module 'axi_crossbar_v2_1_28_decerr_slave'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20945 ; free virtual = 26947
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 23    
+	   2 Input    1 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               37 Bit    Registers := 8     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 20    
+	                1 Bit    Registers := 46    
++---Muxes : 
+	   2 Input   37 Bit        Muxes := 8     
+	   2 Input   32 Bit        Muxes := 8     
+	   2 Input   16 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 7     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 29    
+	   3 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 48    
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_28_axi_crossbar.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20941 ; free virtual = 26949
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20803 ; free virtual = 26810
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20772 ; free virtual = 26779
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20754 ; free virtual = 26761
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20711 ; free virtual = 26719
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20711 ; free virtual = 26719
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20712 ; free virtual = 26719
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20713 ; free virtual = 26720
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20712 ; free virtual = 26720
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20712 ; free virtual = 26720
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |     7|
+|2     |LUT2    |    22|
+|3     |LUT3    |   150|
+|4     |LUT4    |    37|
+|5     |LUT5    |    72|
+|6     |LUT6    |   119|
+|7     |SRLC32E |     3|
+|8     |FDRE    |   469|
+|9     |FDSE    |    11|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20712 ; free virtual = 26720
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.439; parent = 1343.843; children = 167.608
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3291.539; parent = 2285.367; children = 1006.172
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2317.379 ; gain = 568.582 ; free physical = 20745 ; free virtual = 26753
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2317.379 ; gain = 700.332 ; free physical = 20745 ; free virtual = 26753
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2317.379 ; gain = 0.000 ; free physical = 20861 ; free virtual = 26868
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2317.379 ; gain = 0.000 ; free physical = 20822 ; free virtual = 26829
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a21ab1a4
+INFO: [Common 17-83] Releasing license: Synthesis
+96 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 2317.379 ; gain = 994.762 ; free physical = 21030 ; free virtual = 27037
+INFO: [Common 17-1381] The checkpoint '/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_0, cache-ID = 410a56889908ca25
+INFO: [Coretcl 2-1174] Renamed 28 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_xbar_0_utilization_synth.rpt -pb design_1_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 17:36:49 2024...

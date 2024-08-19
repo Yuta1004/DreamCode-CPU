@@ -1,0 +1,39 @@
+verilog xil_defaultlib --include "/home/nakagami/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../hardware.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../hardware.gen/sources_1/bd/design_1/ipshared/ee60/hdl" \
+"../../../bd/design_1/ipshared/96b9/src/cpu_monitor_controller_AXI.v" \
+"../../../bd/design_1/ipshared/96b9/src/cpu_monitor_controller_auto_generated.v" \
+"../../../bd/design_1/ipshared/96b9/src/cpu_monitor_controller.v" \
+"../../../bd/design_1/ip/design_1_cpu_monitor_0_0/sim/design_1_cpu_monitor_0_0.v" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../bd/design_1/ipshared/1a72/src/seg7.v" \
+"../../../bd/design_1/ip/design_1_seg7_0_0/sim/design_1_seg7_0_0.v" \
+"../../../bd/design_1/ipshared/6c7b/src/mem/axi/cache.v" \
+"../../../bd/design_1/ipshared/6c7b/src/core/components/pipeline/check.v" \
+"../../../bd/design_1/ipshared/6c7b/src/peripherals/clint.v" \
+"../../../bd/design_1/ipshared/6c7b/src/core/core.v" \
+"../../../bd/design_1/ipshared/6c7b/src/core/components/pipeline/decode.v" \
+"../../../bd/design_1/ipshared/6c7b/src/core/components/pipeline/exec.v" \
+"../../../bd/design_1/ipshared/6c7b/src/core/components/pipeline/fetch.v" \
+"../../../bd/design_1/ipshared/6c7b/src/mem/axi/interconnect.v" \
+"../../../bd/design_1/ipshared/6c7b/src/core/components/main.v" \
+"../../../bd/design_1/ipshared/6c7b/src/mem/axi/mem.v" \
+"../../../bd/design_1/ipshared/6c7b/src/core/components/mmu.v" \
+"../../../bd/design_1/ipshared/6c7b/src/core/components/pipeline/mread.v" \
+"../../../bd/design_1/ipshared/6c7b/src/peripherals/plic.v" \
+"../../../bd/design_1/ipshared/6c7b/src/mem/utils/ram/ram_dualport.v" \
+"../../../bd/design_1/ipshared/6c7b/src/mem/utils/rom/rom_dualport.v" \
+"../../../bd/design_1/ipshared/6c7b/src/core/components/pipeline/register/std_csr.v" \
+"../../../bd/design_1/ipshared/6c7b/src/core/components/pipeline/register/std_rv32i.v" \
+"../../../bd/design_1/ipshared/6c7b/src/mem/axi/translate.v" \
+"../../../bd/design_1/ipshared/6c7b/src/core/components/pipeline/trap.v" \
+"../../../bd/design_1/ipshared/6c7b/src/cpu.v" \
+"../../../bd/design_1/ip/design_1_cpu_0_0/sim/design_1_cpu_0_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_2/sim/design_1_auto_pc_2.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_3/sim/design_1_auto_pc_3.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
