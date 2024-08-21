@@ -17,5 +17,7 @@ $ make setup
 ## Dirs
 
 - [ip/cpu](ip/cpu) : RISC-V CPU (rv32i) IP
+- [ip/cpu_monitor](ip/cpu_monitor) : CPUモニタ用IP
+- [ip/seg7](ip/seg7) : 7セグLED制御用IP
 - [vproj/sim](vproj/sim) : シミュレーション用Vivadoプロジェクト
-- [vproj/synth](vproj/synth) : 合成用Vivadoプロジェクト
+- [vproj/synth_riscv_tests](vproj/synth_riscv_tests) : 合成用Vivadoプロジェクト
