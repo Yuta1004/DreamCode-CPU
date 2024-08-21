@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-// Date        : Tue Aug 20 00:49:59 2024
+// Date        : Wed Aug 21 23:42:29 2024
 // Host        : plab-imac running 64-bit Ubuntu 22.04.4 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ip/design_1_cpu_0_0/design_1_cpu_0_0_stub.v
@@ -14,7 +14,7 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "cpu,Vivado 2022.2" *)
-module design_1_cpu_0_0(CLK, RST, GP, STAT, M_AXI_AWID, M_AXI_AWADDR, 
+module design_1_cpu_0_0(CLK, RST, PC, GP, STAT, M_AXI_AWID, M_AXI_AWADDR, 
   M_AXI_AWLEN, M_AXI_AWSIZE, M_AXI_AWBURST, M_AXI_AWLOCK, M_AXI_AWCACHE, M_AXI_AWPROT, 
   M_AXI_AWQOS, M_AXI_AWUSER, M_AXI_AWVALID, M_AXI_AWREADY, M_AXI_WDATA, M_AXI_WSTRB, 
   M_AXI_WLAST, M_AXI_WUSER, M_AXI_WVALID, M_AXI_WREADY, M_AXI_BID, M_AXI_BRESP, M_AXI_BUSER, 
@@ -22,9 +22,10 @@ module design_1_cpu_0_0(CLK, RST, GP, STAT, M_AXI_AWID, M_AXI_AWADDR,
   M_AXI_ARBURST, M_AXI_ARLOCK, M_AXI_ARCACHE, M_AXI_ARPROT, M_AXI_ARQOS, M_AXI_ARUSER, 
   M_AXI_ARVALID, M_AXI_ARREADY, M_AXI_RID, M_AXI_RDATA, M_AXI_RRESP, M_AXI_RLAST, M_AXI_RUSER, 
   M_AXI_RVALID, M_AXI_RREADY)
-/* synthesis syn_black_box black_box_pad_pin="CLK,RST,GP[31:0],STAT[3:0],M_AXI_AWID,M_AXI_AWADDR[31:0],M_AXI_AWLEN[7:0],M_AXI_AWSIZE[2:0],M_AXI_AWBURST[1:0],M_AXI_AWLOCK[1:0],M_AXI_AWCACHE[3:0],M_AXI_AWPROT[2:0],M_AXI_AWQOS[3:0],M_AXI_AWUSER,M_AXI_AWVALID,M_AXI_AWREADY,M_AXI_WDATA[31:0],M_AXI_WSTRB[3:0],M_AXI_WLAST,M_AXI_WUSER,M_AXI_WVALID,M_AXI_WREADY,M_AXI_BID,M_AXI_BRESP[1:0],M_AXI_BUSER,M_AXI_BVALID,M_AXI_BREADY,M_AXI_ARID,M_AXI_ARADDR[31:0],M_AXI_ARLEN[7:0],M_AXI_ARSIZE[2:0],M_AXI_ARBURST[1:0],M_AXI_ARLOCK[1:0],M_AXI_ARCACHE[3:0],M_AXI_ARPROT[2:0],M_AXI_ARQOS[3:0],M_AXI_ARUSER,M_AXI_ARVALID,M_AXI_ARREADY,M_AXI_RID,M_AXI_RDATA[31:0],M_AXI_RRESP[1:0],M_AXI_RLAST,M_AXI_RUSER,M_AXI_RVALID,M_AXI_RREADY" */;
+/* synthesis syn_black_box black_box_pad_pin="CLK,RST,PC[31:0],GP[31:0],STAT[3:0],M_AXI_AWID,M_AXI_AWADDR[31:0],M_AXI_AWLEN[7:0],M_AXI_AWSIZE[2:0],M_AXI_AWBURST[1:0],M_AXI_AWLOCK[1:0],M_AXI_AWCACHE[3:0],M_AXI_AWPROT[2:0],M_AXI_AWQOS[3:0],M_AXI_AWUSER,M_AXI_AWVALID,M_AXI_AWREADY,M_AXI_WDATA[31:0],M_AXI_WSTRB[3:0],M_AXI_WLAST,M_AXI_WUSER,M_AXI_WVALID,M_AXI_WREADY,M_AXI_BID,M_AXI_BRESP[1:0],M_AXI_BUSER,M_AXI_BVALID,M_AXI_BREADY,M_AXI_ARID,M_AXI_ARADDR[31:0],M_AXI_ARLEN[7:0],M_AXI_ARSIZE[2:0],M_AXI_ARBURST[1:0],M_AXI_ARLOCK[1:0],M_AXI_ARCACHE[3:0],M_AXI_ARPROT[2:0],M_AXI_ARQOS[3:0],M_AXI_ARUSER,M_AXI_ARVALID,M_AXI_ARREADY,M_AXI_RID,M_AXI_RDATA[31:0],M_AXI_RRESP[1:0],M_AXI_RLAST,M_AXI_RUSER,M_AXI_RVALID,M_AXI_RREADY" */;
   input CLK;
   input RST;
+  output [31:0]PC;
   output [31:0]GP;
   output [3:0]STAT;
   output M_AXI_AWID;

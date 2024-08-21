@@ -48,7 +48,7 @@
 
 
 // IP VLNV: dev.nakagamiyuta.dreamcode:user:cpu:1.0
-// IP Revision: 2
+// IP Revision: 4
 
 `timescale 1ns/1ps
 
@@ -57,6 +57,7 @@
 module design_1_cpu_0_0 (
   CLK,
   RST,
+  PC,
   GP,
   STAT,
   M_AXI_AWID,
@@ -109,6 +110,7 @@ input wire CLK;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST RST" *)
 input wire RST;
+output wire [31 : 0] PC;
 output wire [31 : 0] GP;
 output wire [3 : 0] STAT;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWID" *)
@@ -199,10 +201,11 @@ NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0"
 output wire M_AXI_RREADY;
 
   cpu #(
-    .START_ADDR(32'H00000000)
+    .START_ADDR(32'H20000000)
   ) inst (
     .CLK(CLK),
     .RST(RST),
+    .PC(PC),
     .GP(GP),
     .STAT(STAT),
     .M_AXI_AWID(M_AXI_AWID),

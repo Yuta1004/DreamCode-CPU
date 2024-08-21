@@ -2234,6 +2234,11 @@
         "xci_name": "design_1_cpu_0_0",
         "xci_path": "ip/design_1_cpu_0_0/design_1_cpu_0_0.xci",
         "inst_hier_path": "cpu_0",
+        "parameters": {
+          "START_ADDR": {
+            "value": "0x00000000"
+          }
+        },
         "interface_ports": {
           "M_AXI": {
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -2328,7 +2333,12 @@
       "cpu_0_GP": {
         "ports": [
           "cpu_0/GP",
-          "cpu_monitor_0/GP",
+          "cpu_monitor_0/GP"
+        ]
+      },
+      "cpu_0_PC": {
+        "ports": [
+          "cpu_0/PC",
           "seg7_0/DATA"
         ]
       },

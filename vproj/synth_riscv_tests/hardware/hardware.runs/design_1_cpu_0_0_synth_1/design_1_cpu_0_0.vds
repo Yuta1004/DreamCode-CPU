@@ -2,16 +2,16 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Aug 20 00:48:47 2024
-# Process ID: 43303
+# Start of session at: Wed Aug 21 23:41:23 2024
+# Process ID: 68963
 # Current directory: /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_cpu_0_0_synth_1
 # Command line: vivado -log design_1_cpu_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_cpu_0_0.tcl
 # Log file: /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_cpu_0_0_synth_1/design_1_cpu_0_0.vds
 # Journal file: /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_cpu_0_0_synth_1/vivado.jou
-# Running On: plab-imac, OS: Linux, CPU Frequency: 4342.349 MHz, CPU Physical cores: 4, Host memory: 33593 MB
+# Running On: plab-imac, OS: Linux, CPU Frequency: 4295.308 MHz, CPU Physical cores: 4, Host memory: 33593 MB
 #-----------------------------------------------------------
 source design_1_cpu_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1270.039 ; gain = 0.023 ; free physical = 24305 ; free virtual = 29512
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1331.621 ; gain = 0.023 ; free physical = 23114 ; free virtual = 29145
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nakagami/Develop/project/DreamCode/cpu/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nakagami/Xilinx/Vivado/2022.2/data/ip'.
@@ -23,346 +23,346 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 43364
+INFO: [Synth 8-7075] Helper process launched with PID 69029
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/nakagami/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-INFO: [Synth 8-11241] undeclared symbol 'rden', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:113]
-INFO: [Synth 8-11241] undeclared symbol 'wren', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:114]
-WARNING: [Synth 8-6901] identifier 'HIT_CHECK_RESULT_R' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:113]
-WARNING: [Synth 8-6901] identifier 'HIT_CHECK_RESULT_W' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:114]
-WARNING: [Synth 8-6901] identifier 'ar_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:133]
-WARNING: [Synth 8-6901] identifier 'S_AR_WAIT' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:133]
-WARNING: [Synth 8-6901] identifier 'ar_next_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:133]
-WARNING: [Synth 8-6901] identifier 'S_AR_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:133]
-WARNING: [Synth 8-6901] identifier 'awb_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:136]
-WARNING: [Synth 8-6901] identifier 'S_AWB_WAIT' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:136]
-WARNING: [Synth 8-6901] identifier 'awb_next_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:136]
-WARNING: [Synth 8-6901] identifier 'S_AWB_WAIT_AR' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:136]
-WARNING: [Synth 8-6901] identifier 'awb_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:139]
-WARNING: [Synth 8-6901] identifier 'S_AWB_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:139]
-WARNING: [Synth 8-6901] identifier 'awb_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:147]
-WARNING: [Synth 8-6901] identifier 'S_AWB_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:147]
-WARNING: [Synth 8-11065] parameter 'S_AR_IDLE' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:171]
-WARNING: [Synth 8-11065] parameter 'S_AR_CHECK' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:172]
-WARNING: [Synth 8-11065] parameter 'S_AR_ADDR' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:173]
-WARNING: [Synth 8-11065] parameter 'S_AR_WAIT' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:174]
-WARNING: [Synth 8-11065] parameter 'S_R_IDLE' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:240]
-WARNING: [Synth 8-11065] parameter 'S_R_READ' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:241]
-WARNING: [Synth 8-11065] parameter 'S_AWB_IDLE' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:286]
-WARNING: [Synth 8-11065] parameter 'S_AWB_ADDR' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:287]
-WARNING: [Synth 8-11065] parameter 'S_AWB_WAIT' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:288]
-WARNING: [Synth 8-11065] parameter 'S_AWB_WAIT_AR' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:289]
-WARNING: [Synth 8-11065] parameter 'S_W_IDLE' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:352]
-WARNING: [Synth 8-11065] parameter 'S_W_FETCH' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:353]
-WARNING: [Synth 8-11065] parameter 'S_W_WAIT' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:354]
-INFO: [Synth 8-11241] undeclared symbol 'clint_rden', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/peripherals/clint.v:26]
-INFO: [Synth 8-11241] undeclared symbol 'clint_wren', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/peripherals/clint.v:27]
-INFO: [Synth 8-11241] undeclared symbol 'inst_rden', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:64]
-INFO: [Synth 8-11241] undeclared symbol 'inst_riaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:65]
-INFO: [Synth 8-11241] undeclared symbol 'inst_roaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:66]
-INFO: [Synth 8-11241] undeclared symbol 'inst_rvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:67]
-INFO: [Synth 8-11241] undeclared symbol 'inst_rdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:68]
-INFO: [Synth 8-11241] undeclared symbol 'data_rden', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:69]
-INFO: [Synth 8-11241] undeclared symbol 'data_riaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:70]
-INFO: [Synth 8-11241] undeclared symbol 'data_roaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:71]
-INFO: [Synth 8-11241] undeclared symbol 'data_rvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:72]
-INFO: [Synth 8-11241] undeclared symbol 'data_rdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:73]
-INFO: [Synth 8-11241] undeclared symbol 'data_wren', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:74]
-INFO: [Synth 8-11241] undeclared symbol 'data_wstrb', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:75]
-INFO: [Synth 8-11241] undeclared symbol 'data_waddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:76]
-INFO: [Synth 8-11241] undeclared symbol 'data_wdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:77]
-WARNING: [Synth 8-8895] 'inst_rden' is already implicitly declared on line 64 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:82]
-WARNING: [Synth 8-8895] 'inst_rvalid' is already implicitly declared on line 67 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:82]
-WARNING: [Synth 8-8895] 'inst_riaddr' is already implicitly declared on line 65 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:83]
-WARNING: [Synth 8-8895] 'inst_roaddr' is already implicitly declared on line 66 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:83]
-WARNING: [Synth 8-8895] 'inst_rdata' is already implicitly declared on line 68 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:83]
-WARNING: [Synth 8-8895] 'data_rden' is already implicitly declared on line 69 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:84]
-WARNING: [Synth 8-8895] 'data_rvalid' is already implicitly declared on line 72 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:84]
-WARNING: [Synth 8-8895] 'data_wren' is already implicitly declared on line 74 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:84]
-WARNING: [Synth 8-8895] 'data_wstrb' is already implicitly declared on line 75 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:85]
-WARNING: [Synth 8-8895] 'data_riaddr' is already implicitly declared on line 70 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:86]
-WARNING: [Synth 8-8895] 'data_roaddr' is already implicitly declared on line 71 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:86]
-WARNING: [Synth 8-8895] 'data_rdata' is already implicitly declared on line 73 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:86]
-WARNING: [Synth 8-8895] 'data_waddr' is already implicitly declared on line 76 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:86]
-WARNING: [Synth 8-8895] 'data_wdata' is already implicitly declared on line 77 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:86]
-INFO: [Synth 8-11241] undeclared symbol 's1_r_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/interconnect.v:144]
-INFO: [Synth 8-11241] undeclared symbol 's2_r_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/interconnect.v:145]
-INFO: [Synth 8-11241] undeclared symbol 's3_r_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/interconnect.v:146]
-INFO: [Synth 8-11241] undeclared symbol 's1_w_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/interconnect.v:183]
-INFO: [Synth 8-11241] undeclared symbol 's2_w_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/interconnect.v:184]
-INFO: [Synth 8-11241] undeclared symbol 's3_w_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/interconnect.v:185]
-INFO: [Synth 8-11241] undeclared symbol 'trap_en', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:144]
-INFO: [Synth 8-11241] undeclared symbol 'trap_code', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:145]
-INFO: [Synth 8-11241] undeclared symbol 'trap_pc', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:146]
-INFO: [Synth 8-11241] undeclared symbol 'memr_csr_w_en', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:155]
-INFO: [Synth 8-11241] undeclared symbol 'memr_csr_w_addr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:156]
-INFO: [Synth 8-11241] undeclared symbol 'memr_csr_w_data', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:157]
-INFO: [Synth 8-11241] undeclared symbol 'exec_csr_w_en', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:161]
-INFO: [Synth 8-11241] undeclared symbol 'exec_csr_w_addr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:162]
-INFO: [Synth 8-11241] undeclared symbol 'exec_csr_w_data', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:163]
-INFO: [Synth 8-11241] undeclared symbol 'memr_reg_w_rd', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:185]
-INFO: [Synth 8-11241] undeclared symbol 'memr_reg_w_data', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:186]
-INFO: [Synth 8-11241] undeclared symbol 'exec_reg_w_en', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:190]
-INFO: [Synth 8-11241] undeclared symbol 'exec_reg_w_rd', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:191]
-INFO: [Synth 8-11241] undeclared symbol 'exec_reg_w_data', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:192]
-WARNING: [Synth 8-8895] 'exec_reg_w_en' is already implicitly declared on line 190 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:196]
-WARNING: [Synth 8-8895] 'exec_csr_w_en' is already implicitly declared on line 161 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:196]
-WARNING: [Synth 8-8895] 'exec_reg_w_data' is already implicitly declared on line 192 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:197]
-WARNING: [Synth 8-8895] 'exec_csr_w_data' is already implicitly declared on line 163 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:197]
-WARNING: [Synth 8-8895] 'exec_csr_w_addr' is already implicitly declared on line 162 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:198]
-WARNING: [Synth 8-8895] 'exec_reg_w_rd' is already implicitly declared on line 191 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:199]
-WARNING: [Synth 8-8895] 'memr_csr_w_en' is already implicitly declared on line 155 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:246]
-WARNING: [Synth 8-8895] 'memr_reg_w_data' is already implicitly declared on line 186 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:247]
-WARNING: [Synth 8-8895] 'memr_csr_w_data' is already implicitly declared on line 157 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:247]
-WARNING: [Synth 8-8895] 'memr_csr_w_addr' is already implicitly declared on line 156 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:248]
-WARNING: [Synth 8-8895] 'memr_reg_w_rd' is already implicitly declared on line 185 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:249]
-WARNING: [Synth 8-8895] 'trap_en' is already implicitly declared on line 144 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:299]
-WARNING: [Synth 8-8895] 'trap_pc' is already implicitly declared on line 146 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:300]
-WARNING: [Synth 8-8895] 'trap_code' is already implicitly declared on line 145 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:300]
-WARNING: [Synth 8-6901] identifier 'trap_en' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:38]
-WARNING: [Synth 8-6901] identifier 'memr_jmp_do' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:38]
-WARNING: [Synth 8-6901] identifier 'trap_en' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:39]
-WARNING: [Synth 8-6901] identifier 'trap_jmp_to' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:39]
-WARNING: [Synth 8-6901] identifier 'memr_jmp_pc' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:39]
-WARNING: [Synth 8-6901] identifier 'check_rs1_valid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:40]
-WARNING: [Synth 8-6901] identifier 'check_rs2_valid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:40]
-WARNING: [Synth 8-6901] identifier 'check_csr_valid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:40]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:148]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awlen', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:149]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awsize', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:150]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awburst', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:151]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:152]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:153]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_wdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:154]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_wstrb', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:155]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_wlast', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:156]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_wvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:157]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_wready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:158]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_bid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:159]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_bresp', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:160]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_bvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:161]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_araddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:162]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_arlen', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:163]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_arsize', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:164]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_arburst', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:165]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_arvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:166]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_arready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:167]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_rid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:168]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_rdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:169]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_rresp', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:170]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_rlast', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:171]
-INFO: [Synth 8-11241] undeclared symbol 'axi_inst_rvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:172]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_awaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:174]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_awlen', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:175]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_awsize', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:176]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_awburst', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:177]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_awvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:178]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_awready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:179]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_wdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:180]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_wstrb', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:181]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_wlast', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:182]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_wvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:183]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_wready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:184]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_bid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:185]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_bresp', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:186]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_bvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:187]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_araddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:188]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_arlen', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:189]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_arsize', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:190]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_arburst', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:191]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_arvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:192]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_arready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:193]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_rid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:194]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_rdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:195]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_rresp', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:196]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_rlast', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:197]
-INFO: [Synth 8-11241] undeclared symbol 'axi_data_rvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:198]
-INFO: [Synth 8-11241] undeclared symbol 'axi_device_awaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:200]
-INFO: [Synth 8-11241] undeclared symbol 'axi_device_awlen', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:201]
-INFO: [Synth 8-11241] undeclared symbol 'axi_device_awsize', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:202]
-INFO: [Synth 8-11241] undeclared symbol 'axi_device_awburst', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:203]
-INFO: [Synth 8-11241] undeclared symbol 'axi_device_awvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:204]
-INFO: [Synth 8-11241] undeclared symbol 'axi_device_awready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:205]
-INFO: [Synth 8-11241] undeclared symbol 'axi_device_wdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:206]
-INFO: [Synth 8-11241] undeclared symbol 'axi_device_wstrb', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:207]
-INFO: [Synth 8-11241] undeclared symbol 'axi_device_wlast', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:208]
-INFO: [Synth 8-11241] undeclared symbol 'axi_device_wvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:209]
-INFO: [Synth 8-11241] undeclared symbol 'axi_device_wready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:210]
+INFO: [Synth 8-11241] undeclared symbol 'rden', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:113]
+INFO: [Synth 8-11241] undeclared symbol 'wren', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:114]
+WARNING: [Synth 8-6901] identifier 'HIT_CHECK_RESULT_R' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:113]
+WARNING: [Synth 8-6901] identifier 'HIT_CHECK_RESULT_W' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:114]
+WARNING: [Synth 8-6901] identifier 'ar_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:133]
+WARNING: [Synth 8-6901] identifier 'S_AR_WAIT' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:133]
+WARNING: [Synth 8-6901] identifier 'ar_next_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:133]
+WARNING: [Synth 8-6901] identifier 'S_AR_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:133]
+WARNING: [Synth 8-6901] identifier 'awb_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:136]
+WARNING: [Synth 8-6901] identifier 'S_AWB_WAIT' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:136]
+WARNING: [Synth 8-6901] identifier 'awb_next_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:136]
+WARNING: [Synth 8-6901] identifier 'S_AWB_WAIT_AR' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:136]
+WARNING: [Synth 8-6901] identifier 'awb_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:139]
+WARNING: [Synth 8-6901] identifier 'S_AWB_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:139]
+WARNING: [Synth 8-6901] identifier 'awb_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:147]
+WARNING: [Synth 8-6901] identifier 'S_AWB_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:147]
+WARNING: [Synth 8-11065] parameter 'S_AR_IDLE' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:171]
+WARNING: [Synth 8-11065] parameter 'S_AR_CHECK' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:172]
+WARNING: [Synth 8-11065] parameter 'S_AR_ADDR' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:173]
+WARNING: [Synth 8-11065] parameter 'S_AR_WAIT' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:174]
+WARNING: [Synth 8-11065] parameter 'S_R_IDLE' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:240]
+WARNING: [Synth 8-11065] parameter 'S_R_READ' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:241]
+WARNING: [Synth 8-11065] parameter 'S_AWB_IDLE' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:286]
+WARNING: [Synth 8-11065] parameter 'S_AWB_ADDR' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:287]
+WARNING: [Synth 8-11065] parameter 'S_AWB_WAIT' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:288]
+WARNING: [Synth 8-11065] parameter 'S_AWB_WAIT_AR' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:289]
+WARNING: [Synth 8-11065] parameter 'S_W_IDLE' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:352]
+WARNING: [Synth 8-11065] parameter 'S_W_FETCH' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:353]
+WARNING: [Synth 8-11065] parameter 'S_W_WAIT' becomes localparam in 'cache_axi' with formal parameter declaration list [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:354]
+INFO: [Synth 8-11241] undeclared symbol 'clint_rden', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/peripherals/clint.v:26]
+INFO: [Synth 8-11241] undeclared symbol 'clint_wren', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/peripherals/clint.v:27]
+INFO: [Synth 8-11241] undeclared symbol 'inst_rden', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:64]
+INFO: [Synth 8-11241] undeclared symbol 'inst_riaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:65]
+INFO: [Synth 8-11241] undeclared symbol 'inst_roaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:66]
+INFO: [Synth 8-11241] undeclared symbol 'inst_rvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:67]
+INFO: [Synth 8-11241] undeclared symbol 'inst_rdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:68]
+INFO: [Synth 8-11241] undeclared symbol 'data_rden', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:69]
+INFO: [Synth 8-11241] undeclared symbol 'data_riaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:70]
+INFO: [Synth 8-11241] undeclared symbol 'data_roaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:71]
+INFO: [Synth 8-11241] undeclared symbol 'data_rvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:72]
+INFO: [Synth 8-11241] undeclared symbol 'data_rdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:73]
+INFO: [Synth 8-11241] undeclared symbol 'data_wren', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:74]
+INFO: [Synth 8-11241] undeclared symbol 'data_wstrb', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:75]
+INFO: [Synth 8-11241] undeclared symbol 'data_waddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:76]
+INFO: [Synth 8-11241] undeclared symbol 'data_wdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:77]
+WARNING: [Synth 8-8895] 'inst_rden' is already implicitly declared on line 64 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:82]
+WARNING: [Synth 8-8895] 'inst_rvalid' is already implicitly declared on line 67 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:82]
+WARNING: [Synth 8-8895] 'inst_riaddr' is already implicitly declared on line 65 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:83]
+WARNING: [Synth 8-8895] 'inst_roaddr' is already implicitly declared on line 66 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:83]
+WARNING: [Synth 8-8895] 'inst_rdata' is already implicitly declared on line 68 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:83]
+WARNING: [Synth 8-8895] 'data_rden' is already implicitly declared on line 69 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:84]
+WARNING: [Synth 8-8895] 'data_rvalid' is already implicitly declared on line 72 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:84]
+WARNING: [Synth 8-8895] 'data_wren' is already implicitly declared on line 74 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:84]
+WARNING: [Synth 8-8895] 'data_wstrb' is already implicitly declared on line 75 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:85]
+WARNING: [Synth 8-8895] 'data_riaddr' is already implicitly declared on line 70 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:86]
+WARNING: [Synth 8-8895] 'data_roaddr' is already implicitly declared on line 71 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:86]
+WARNING: [Synth 8-8895] 'data_rdata' is already implicitly declared on line 73 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:86]
+WARNING: [Synth 8-8895] 'data_waddr' is already implicitly declared on line 76 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:86]
+WARNING: [Synth 8-8895] 'data_wdata' is already implicitly declared on line 77 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:86]
+INFO: [Synth 8-11241] undeclared symbol 's1_r_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/interconnect.v:144]
+INFO: [Synth 8-11241] undeclared symbol 's2_r_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/interconnect.v:145]
+INFO: [Synth 8-11241] undeclared symbol 's3_r_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/interconnect.v:146]
+INFO: [Synth 8-11241] undeclared symbol 's1_w_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/interconnect.v:183]
+INFO: [Synth 8-11241] undeclared symbol 's2_w_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/interconnect.v:184]
+INFO: [Synth 8-11241] undeclared symbol 's3_w_allow', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/interconnect.v:185]
+INFO: [Synth 8-11241] undeclared symbol 'trap_en', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:144]
+INFO: [Synth 8-11241] undeclared symbol 'trap_code', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:145]
+INFO: [Synth 8-11241] undeclared symbol 'trap_pc', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:146]
+INFO: [Synth 8-11241] undeclared symbol 'memr_csr_w_en', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:155]
+INFO: [Synth 8-11241] undeclared symbol 'memr_csr_w_addr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:156]
+INFO: [Synth 8-11241] undeclared symbol 'memr_csr_w_data', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:157]
+INFO: [Synth 8-11241] undeclared symbol 'exec_csr_w_en', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:161]
+INFO: [Synth 8-11241] undeclared symbol 'exec_csr_w_addr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:162]
+INFO: [Synth 8-11241] undeclared symbol 'exec_csr_w_data', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:163]
+INFO: [Synth 8-11241] undeclared symbol 'memr_reg_w_rd', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:185]
+INFO: [Synth 8-11241] undeclared symbol 'memr_reg_w_data', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:186]
+INFO: [Synth 8-11241] undeclared symbol 'exec_reg_w_en', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:190]
+INFO: [Synth 8-11241] undeclared symbol 'exec_reg_w_rd', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:191]
+INFO: [Synth 8-11241] undeclared symbol 'exec_reg_w_data', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:192]
+WARNING: [Synth 8-8895] 'exec_reg_w_en' is already implicitly declared on line 190 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:196]
+WARNING: [Synth 8-8895] 'exec_csr_w_en' is already implicitly declared on line 161 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:196]
+WARNING: [Synth 8-8895] 'exec_reg_w_data' is already implicitly declared on line 192 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:197]
+WARNING: [Synth 8-8895] 'exec_csr_w_data' is already implicitly declared on line 163 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:197]
+WARNING: [Synth 8-8895] 'exec_csr_w_addr' is already implicitly declared on line 162 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:198]
+WARNING: [Synth 8-8895] 'exec_reg_w_rd' is already implicitly declared on line 191 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:199]
+WARNING: [Synth 8-8895] 'memr_csr_w_en' is already implicitly declared on line 155 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:246]
+WARNING: [Synth 8-8895] 'memr_reg_w_data' is already implicitly declared on line 186 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:247]
+WARNING: [Synth 8-8895] 'memr_csr_w_data' is already implicitly declared on line 157 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:247]
+WARNING: [Synth 8-8895] 'memr_csr_w_addr' is already implicitly declared on line 156 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:248]
+WARNING: [Synth 8-8895] 'memr_reg_w_rd' is already implicitly declared on line 185 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:249]
+WARNING: [Synth 8-8895] 'trap_en' is already implicitly declared on line 144 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:299]
+WARNING: [Synth 8-8895] 'trap_pc' is already implicitly declared on line 146 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:300]
+WARNING: [Synth 8-8895] 'trap_code' is already implicitly declared on line 145 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:300]
+WARNING: [Synth 8-6901] identifier 'trap_en' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:38]
+WARNING: [Synth 8-6901] identifier 'memr_jmp_do' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:38]
+WARNING: [Synth 8-6901] identifier 'trap_en' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:39]
+WARNING: [Synth 8-6901] identifier 'trap_jmp_to' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:39]
+WARNING: [Synth 8-6901] identifier 'memr_jmp_pc' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:39]
+WARNING: [Synth 8-6901] identifier 'check_rs1_valid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:40]
+WARNING: [Synth 8-6901] identifier 'check_rs2_valid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:40]
+WARNING: [Synth 8-6901] identifier 'check_csr_valid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:40]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:148]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awlen', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:149]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awsize', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:150]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awburst', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:151]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:152]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_awready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:153]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_wdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:154]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_wstrb', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:155]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_wlast', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:156]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_wvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:157]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_wready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:158]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_bid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:159]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_bresp', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:160]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_bvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:161]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_araddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:162]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_arlen', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:163]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_arsize', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:164]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_arburst', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:165]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_arvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:166]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_arready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:167]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_rid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:168]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_rdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:169]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_rresp', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:170]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_rlast', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:171]
+INFO: [Synth 8-11241] undeclared symbol 'axi_inst_rvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:172]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_awaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:174]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_awlen', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:175]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_awsize', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:176]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_awburst', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:177]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_awvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:178]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_awready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:179]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_wdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:180]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_wstrb', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:181]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_wlast', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:182]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_wvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:183]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_wready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:184]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_bid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:185]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_bresp', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:186]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_bvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:187]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_araddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:188]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_arlen', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:189]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_arsize', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:190]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_arburst', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:191]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_arvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:192]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_arready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:193]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_rid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:194]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_rdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:195]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_rresp', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:196]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_rlast', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:197]
+INFO: [Synth 8-11241] undeclared symbol 'axi_data_rvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:198]
+INFO: [Synth 8-11241] undeclared symbol 'axi_device_awaddr', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:200]
+INFO: [Synth 8-11241] undeclared symbol 'axi_device_awlen', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:201]
+INFO: [Synth 8-11241] undeclared symbol 'axi_device_awsize', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:202]
+INFO: [Synth 8-11241] undeclared symbol 'axi_device_awburst', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:203]
+INFO: [Synth 8-11241] undeclared symbol 'axi_device_awvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:204]
+INFO: [Synth 8-11241] undeclared symbol 'axi_device_awready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:205]
+INFO: [Synth 8-11241] undeclared symbol 'axi_device_wdata', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:206]
+INFO: [Synth 8-11241] undeclared symbol 'axi_device_wstrb', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:207]
+INFO: [Synth 8-11241] undeclared symbol 'axi_device_wlast', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:208]
+INFO: [Synth 8-11241] undeclared symbol 'axi_device_wvalid', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:209]
+INFO: [Synth 8-11241] undeclared symbol 'axi_device_wready', assumed default net type 'wire' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:210]
 INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-8895] 'axi_inst_awaddr' is already implicitly declared on line 148 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:277]
-WARNING: [Synth 8-8895] 'axi_inst_wdata' is already implicitly declared on line 154 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:277]
-WARNING: [Synth 8-8895] 'axi_inst_araddr' is already implicitly declared on line 162 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:277]
-WARNING: [Synth 8-8895] 'axi_inst_rdata' is already implicitly declared on line 169 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:277]
-WARNING: [Synth 8-8895] 'axi_inst_awlen' is already implicitly declared on line 149 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:278]
-WARNING: [Synth 8-8895] 'axi_inst_arlen' is already implicitly declared on line 163 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:278]
-WARNING: [Synth 8-8895] 'axi_inst_wstrb' is already implicitly declared on line 155 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:279]
-WARNING: [Synth 8-8895] 'axi_inst_awsize' is already implicitly declared on line 150 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:280]
-WARNING: [Synth 8-8895] 'axi_inst_arsize' is already implicitly declared on line 164 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:280]
-WARNING: [Synth 8-8895] 'axi_inst_awburst' is already implicitly declared on line 151 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:281]
-WARNING: [Synth 8-8895] 'axi_inst_bresp' is already implicitly declared on line 160 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:281]
-WARNING: [Synth 8-8895] 'axi_inst_arburst' is already implicitly declared on line 165 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:281]
-WARNING: [Synth 8-8895] 'axi_inst_rresp' is already implicitly declared on line 170 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:281]
-WARNING: [Synth 8-8895] 'axi_inst_awvalid' is already implicitly declared on line 152 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:282]
-WARNING: [Synth 8-8895] 'axi_inst_awready' is already implicitly declared on line 153 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:282]
-WARNING: [Synth 8-8895] 'axi_inst_wlast' is already implicitly declared on line 156 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:282]
-WARNING: [Synth 8-8895] 'axi_inst_wvalid' is already implicitly declared on line 157 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:282]
-WARNING: [Synth 8-8895] 'axi_inst_wready' is already implicitly declared on line 158 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:282]
-WARNING: [Synth 8-8895] 'axi_inst_bid' is already implicitly declared on line 159 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:283]
-WARNING: [Synth 8-8895] 'axi_inst_bvalid' is already implicitly declared on line 161 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:283]
-WARNING: [Synth 8-8895] 'axi_inst_arvalid' is already implicitly declared on line 166 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:284]
-WARNING: [Synth 8-8895] 'axi_inst_arready' is already implicitly declared on line 167 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:284]
-WARNING: [Synth 8-8895] 'axi_inst_rid' is already implicitly declared on line 168 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:284]
-WARNING: [Synth 8-8895] 'axi_inst_rlast' is already implicitly declared on line 171 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:284]
-WARNING: [Synth 8-8895] 'axi_inst_rvalid' is already implicitly declared on line 172 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:284]
-WARNING: [Synth 8-8895] 'axi_data_awaddr' is already implicitly declared on line 174 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:348]
-WARNING: [Synth 8-8895] 'axi_data_wdata' is already implicitly declared on line 180 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:348]
-WARNING: [Synth 8-8895] 'axi_data_araddr' is already implicitly declared on line 188 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:348]
-WARNING: [Synth 8-8895] 'axi_data_rdata' is already implicitly declared on line 195 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:348]
-WARNING: [Synth 8-8895] 'axi_data_awlen' is already implicitly declared on line 175 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:349]
-WARNING: [Synth 8-8895] 'axi_data_arlen' is already implicitly declared on line 189 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:349]
-WARNING: [Synth 8-8895] 'axi_data_wstrb' is already implicitly declared on line 181 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:350]
-WARNING: [Synth 8-8895] 'axi_data_awsize' is already implicitly declared on line 176 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:351]
-WARNING: [Synth 8-8895] 'axi_data_arsize' is already implicitly declared on line 190 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:351]
-WARNING: [Synth 8-8895] 'axi_data_awburst' is already implicitly declared on line 177 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:352]
-WARNING: [Synth 8-8895] 'axi_data_bresp' is already implicitly declared on line 186 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:352]
-WARNING: [Synth 8-8895] 'axi_data_arburst' is already implicitly declared on line 191 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:352]
-WARNING: [Synth 8-8895] 'axi_data_rresp' is already implicitly declared on line 196 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:352]
-WARNING: [Synth 8-8895] 'axi_data_awvalid' is already implicitly declared on line 178 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:353]
-WARNING: [Synth 8-8895] 'axi_data_awready' is already implicitly declared on line 179 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:353]
-WARNING: [Synth 8-8895] 'axi_data_wlast' is already implicitly declared on line 182 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:353]
-WARNING: [Synth 8-8895] 'axi_data_wvalid' is already implicitly declared on line 183 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:353]
-WARNING: [Synth 8-8895] 'axi_data_wready' is already implicitly declared on line 184 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:353]
-WARNING: [Synth 8-8895] 'axi_data_bid' is already implicitly declared on line 185 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:354]
-WARNING: [Synth 8-8895] 'axi_data_bvalid' is already implicitly declared on line 187 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:354]
-WARNING: [Synth 8-8895] 'axi_data_arvalid' is already implicitly declared on line 192 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:355]
-WARNING: [Synth 8-8895] 'axi_data_arready' is already implicitly declared on line 193 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:355]
-WARNING: [Synth 8-8895] 'axi_data_rid' is already implicitly declared on line 194 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:355]
-WARNING: [Synth 8-8895] 'axi_data_rlast' is already implicitly declared on line 197 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:355]
-WARNING: [Synth 8-8895] 'axi_data_rvalid' is already implicitly declared on line 198 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:355]
-WARNING: [Synth 8-8895] 'axi_device_awaddr' is already implicitly declared on line 200 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:412]
-WARNING: [Synth 8-8895] 'axi_device_wdata' is already implicitly declared on line 206 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:412]
-WARNING: [Synth 8-8895] 'axi_device_araddr' is already implicitly declared on line 214 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:412]
-WARNING: [Synth 8-8895] 'axi_device_rdata' is already implicitly declared on line 221 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:412]
-WARNING: [Synth 8-8895] 'axi_device_awlen' is already implicitly declared on line 201 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:413]
-WARNING: [Synth 8-8895] 'axi_device_arlen' is already implicitly declared on line 215 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:413]
-WARNING: [Synth 8-8895] 'axi_device_wstrb' is already implicitly declared on line 207 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:414]
-WARNING: [Synth 8-8895] 'axi_device_awsize' is already implicitly declared on line 202 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:415]
-WARNING: [Synth 8-8895] 'axi_device_arsize' is already implicitly declared on line 216 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:415]
-WARNING: [Synth 8-8895] 'axi_device_awburst' is already implicitly declared on line 203 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:416]
-WARNING: [Synth 8-8895] 'axi_device_bresp' is already implicitly declared on line 212 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:416]
-WARNING: [Synth 8-8895] 'axi_device_arburst' is already implicitly declared on line 217 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:416]
-WARNING: [Synth 8-8895] 'axi_device_rresp' is already implicitly declared on line 222 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:416]
-WARNING: [Synth 8-8895] 'axi_device_awvalid' is already implicitly declared on line 204 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:417]
-WARNING: [Synth 8-8895] 'axi_device_awready' is already implicitly declared on line 205 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:417]
-WARNING: [Synth 8-8895] 'axi_device_wlast' is already implicitly declared on line 208 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:417]
-WARNING: [Synth 8-8895] 'axi_device_wvalid' is already implicitly declared on line 209 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:417]
-WARNING: [Synth 8-8895] 'axi_device_wready' is already implicitly declared on line 210 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:417]
-WARNING: [Synth 8-8895] 'axi_device_bid' is already implicitly declared on line 211 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:418]
-WARNING: [Synth 8-8895] 'axi_device_bvalid' is already implicitly declared on line 213 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:418]
-WARNING: [Synth 8-8895] 'axi_device_arvalid' is already implicitly declared on line 218 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:419]
-WARNING: [Synth 8-8895] 'axi_device_arready' is already implicitly declared on line 219 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:419]
+WARNING: [Synth 8-8895] 'axi_inst_awaddr' is already implicitly declared on line 148 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:277]
+WARNING: [Synth 8-8895] 'axi_inst_wdata' is already implicitly declared on line 154 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:277]
+WARNING: [Synth 8-8895] 'axi_inst_araddr' is already implicitly declared on line 162 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:277]
+WARNING: [Synth 8-8895] 'axi_inst_rdata' is already implicitly declared on line 169 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:277]
+WARNING: [Synth 8-8895] 'axi_inst_awlen' is already implicitly declared on line 149 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:278]
+WARNING: [Synth 8-8895] 'axi_inst_arlen' is already implicitly declared on line 163 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:278]
+WARNING: [Synth 8-8895] 'axi_inst_wstrb' is already implicitly declared on line 155 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:279]
+WARNING: [Synth 8-8895] 'axi_inst_awsize' is already implicitly declared on line 150 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:280]
+WARNING: [Synth 8-8895] 'axi_inst_arsize' is already implicitly declared on line 164 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:280]
+WARNING: [Synth 8-8895] 'axi_inst_awburst' is already implicitly declared on line 151 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:281]
+WARNING: [Synth 8-8895] 'axi_inst_bresp' is already implicitly declared on line 160 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:281]
+WARNING: [Synth 8-8895] 'axi_inst_arburst' is already implicitly declared on line 165 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:281]
+WARNING: [Synth 8-8895] 'axi_inst_rresp' is already implicitly declared on line 170 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:281]
+WARNING: [Synth 8-8895] 'axi_inst_awvalid' is already implicitly declared on line 152 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:282]
+WARNING: [Synth 8-8895] 'axi_inst_awready' is already implicitly declared on line 153 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:282]
+WARNING: [Synth 8-8895] 'axi_inst_wlast' is already implicitly declared on line 156 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:282]
+WARNING: [Synth 8-8895] 'axi_inst_wvalid' is already implicitly declared on line 157 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:282]
+WARNING: [Synth 8-8895] 'axi_inst_wready' is already implicitly declared on line 158 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:282]
+WARNING: [Synth 8-8895] 'axi_inst_bid' is already implicitly declared on line 159 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:283]
+WARNING: [Synth 8-8895] 'axi_inst_bvalid' is already implicitly declared on line 161 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:283]
+WARNING: [Synth 8-8895] 'axi_inst_arvalid' is already implicitly declared on line 166 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:284]
+WARNING: [Synth 8-8895] 'axi_inst_arready' is already implicitly declared on line 167 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:284]
+WARNING: [Synth 8-8895] 'axi_inst_rid' is already implicitly declared on line 168 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:284]
+WARNING: [Synth 8-8895] 'axi_inst_rlast' is already implicitly declared on line 171 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:284]
+WARNING: [Synth 8-8895] 'axi_inst_rvalid' is already implicitly declared on line 172 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:284]
+WARNING: [Synth 8-8895] 'axi_data_awaddr' is already implicitly declared on line 174 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:348]
+WARNING: [Synth 8-8895] 'axi_data_wdata' is already implicitly declared on line 180 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:348]
+WARNING: [Synth 8-8895] 'axi_data_araddr' is already implicitly declared on line 188 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:348]
+WARNING: [Synth 8-8895] 'axi_data_rdata' is already implicitly declared on line 195 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:348]
+WARNING: [Synth 8-8895] 'axi_data_awlen' is already implicitly declared on line 175 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:349]
+WARNING: [Synth 8-8895] 'axi_data_arlen' is already implicitly declared on line 189 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:349]
+WARNING: [Synth 8-8895] 'axi_data_wstrb' is already implicitly declared on line 181 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:350]
+WARNING: [Synth 8-8895] 'axi_data_awsize' is already implicitly declared on line 176 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:351]
+WARNING: [Synth 8-8895] 'axi_data_arsize' is already implicitly declared on line 190 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:351]
+WARNING: [Synth 8-8895] 'axi_data_awburst' is already implicitly declared on line 177 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:352]
+WARNING: [Synth 8-8895] 'axi_data_bresp' is already implicitly declared on line 186 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:352]
+WARNING: [Synth 8-8895] 'axi_data_arburst' is already implicitly declared on line 191 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:352]
+WARNING: [Synth 8-8895] 'axi_data_rresp' is already implicitly declared on line 196 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:352]
+WARNING: [Synth 8-8895] 'axi_data_awvalid' is already implicitly declared on line 178 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:353]
+WARNING: [Synth 8-8895] 'axi_data_awready' is already implicitly declared on line 179 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:353]
+WARNING: [Synth 8-8895] 'axi_data_wlast' is already implicitly declared on line 182 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:353]
+WARNING: [Synth 8-8895] 'axi_data_wvalid' is already implicitly declared on line 183 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:353]
+WARNING: [Synth 8-8895] 'axi_data_wready' is already implicitly declared on line 184 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:353]
+WARNING: [Synth 8-8895] 'axi_data_bid' is already implicitly declared on line 185 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:354]
+WARNING: [Synth 8-8895] 'axi_data_bvalid' is already implicitly declared on line 187 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:354]
+WARNING: [Synth 8-8895] 'axi_data_arvalid' is already implicitly declared on line 192 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:355]
+WARNING: [Synth 8-8895] 'axi_data_arready' is already implicitly declared on line 193 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:355]
+WARNING: [Synth 8-8895] 'axi_data_rid' is already implicitly declared on line 194 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:355]
+WARNING: [Synth 8-8895] 'axi_data_rlast' is already implicitly declared on line 197 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:355]
+WARNING: [Synth 8-8895] 'axi_data_rvalid' is already implicitly declared on line 198 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:355]
+WARNING: [Synth 8-8895] 'axi_device_awaddr' is already implicitly declared on line 200 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:412]
+WARNING: [Synth 8-8895] 'axi_device_wdata' is already implicitly declared on line 206 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:412]
+WARNING: [Synth 8-8895] 'axi_device_araddr' is already implicitly declared on line 214 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:412]
+WARNING: [Synth 8-8895] 'axi_device_rdata' is already implicitly declared on line 221 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:412]
+WARNING: [Synth 8-8895] 'axi_device_awlen' is already implicitly declared on line 201 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:413]
+WARNING: [Synth 8-8895] 'axi_device_arlen' is already implicitly declared on line 215 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:413]
+WARNING: [Synth 8-8895] 'axi_device_wstrb' is already implicitly declared on line 207 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:414]
+WARNING: [Synth 8-8895] 'axi_device_awsize' is already implicitly declared on line 202 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:415]
+WARNING: [Synth 8-8895] 'axi_device_arsize' is already implicitly declared on line 216 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:415]
+WARNING: [Synth 8-8895] 'axi_device_awburst' is already implicitly declared on line 203 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:416]
+WARNING: [Synth 8-8895] 'axi_device_bresp' is already implicitly declared on line 212 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:416]
+WARNING: [Synth 8-8895] 'axi_device_arburst' is already implicitly declared on line 217 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:416]
+WARNING: [Synth 8-8895] 'axi_device_rresp' is already implicitly declared on line 222 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:416]
+WARNING: [Synth 8-8895] 'axi_device_awvalid' is already implicitly declared on line 204 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:417]
+WARNING: [Synth 8-8895] 'axi_device_awready' is already implicitly declared on line 205 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:417]
+WARNING: [Synth 8-8895] 'axi_device_wlast' is already implicitly declared on line 208 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:417]
+WARNING: [Synth 8-8895] 'axi_device_wvalid' is already implicitly declared on line 209 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:417]
+WARNING: [Synth 8-8895] 'axi_device_wready' is already implicitly declared on line 210 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:417]
+WARNING: [Synth 8-8895] 'axi_device_bid' is already implicitly declared on line 211 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:418]
+WARNING: [Synth 8-8895] 'axi_device_bvalid' is already implicitly declared on line 213 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:418]
+WARNING: [Synth 8-8895] 'axi_device_arvalid' is already implicitly declared on line 218 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:419]
+WARNING: [Synth 8-8895] 'axi_device_arready' is already implicitly declared on line 219 [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:419]
 INFO: [Common 17-14] Message 'Synth 8-8895' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-6901] identifier 'exists_inst_cache' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:84]
-WARNING: [Synth 8-6901] identifier 'exists_data_cache' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:84]
-WARNING: [Synth 8-6901] identifier 'device_loading' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:84]
-WARNING: [Synth 8-6901] identifier 'inst_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:85]
-WARNING: [Synth 8-6901] identifier 'inst_roaddr' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:85]
-WARNING: [Synth 8-6901] identifier 'rom_inst_roaddr' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:85]
-WARNING: [Synth 8-6901] identifier 'inst_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:86]
-WARNING: [Synth 8-6901] identifier 'inst_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:86]
-WARNING: [Synth 8-6901] identifier 'rom_inst_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:86]
-WARNING: [Synth 8-6901] identifier 'inst_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:87]
-WARNING: [Synth 8-6901] identifier 'inst_rdata' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:87]
-WARNING: [Synth 8-6901] identifier 'rom_inst_rdata' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:87]
-WARNING: [Synth 8-6901] identifier 'data_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:88]
-WARNING: [Synth 8-6901] identifier 'data_roaddr' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:88]
-WARNING: [Synth 8-6901] identifier 'device_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:89]
-WARNING: [Synth 8-6901] identifier 'device_roaddr' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:89]
-WARNING: [Synth 8-6901] identifier 'rom_data_roaddr' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:90]
-WARNING: [Synth 8-6901] identifier 'data_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:91]
-WARNING: [Synth 8-6901] identifier 'data_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:91]
-WARNING: [Synth 8-6901] identifier 'device_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:92]
-WARNING: [Synth 8-6901] identifier 'device_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:92]
-WARNING: [Synth 8-6901] identifier 'rom_data_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:93]
-WARNING: [Synth 8-6901] identifier 'data_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:94]
-WARNING: [Synth 8-6901] identifier 'data_rdata' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:94]
-WARNING: [Synth 8-6901] identifier 'device_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:95]
-WARNING: [Synth 8-6901] identifier 'device_rdata' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:95]
-WARNING: [Synth 8-6901] identifier 'rom_data_rdata' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:96]
-WARNING: [Synth 8-6901] identifier 'mtvec' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/register/std_csr.v:43]
-WARNING: [Synth 8-6901] identifier 'mtvec' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/register/std_csr.v:44]
-WARNING: [Synth 8-6901] identifier 'mstatus' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/register/std_csr.v:45]
-WARNING: [Synth 8-6901] identifier 'sr_next_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:66]
-WARNING: [Synth 8-6901] identifier 'S_SR_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:66]
-WARNING: [Synth 8-6901] identifier 'sw_next_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:66]
-WARNING: [Synth 8-6901] identifier 'S_SW_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:66]
-WARNING: [Synth 8-6901] identifier 'sr_next_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:81]
-WARNING: [Synth 8-6901] identifier 'S_SR_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:81]
-WARNING: [Synth 8-6901] identifier 'rdata_cache' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:84]
-WARNING: [Synth 8-6901] identifier 'sw_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:132]
-WARNING: [Synth 8-6901] identifier 'S_SW_FINISH' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:132]
+WARNING: [Synth 8-6901] identifier 'exists_inst_cache' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:84]
+WARNING: [Synth 8-6901] identifier 'exists_data_cache' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:84]
+WARNING: [Synth 8-6901] identifier 'device_loading' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:84]
+WARNING: [Synth 8-6901] identifier 'inst_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:85]
+WARNING: [Synth 8-6901] identifier 'inst_roaddr' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:85]
+WARNING: [Synth 8-6901] identifier 'rom_inst_roaddr' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:85]
+WARNING: [Synth 8-6901] identifier 'inst_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:86]
+WARNING: [Synth 8-6901] identifier 'inst_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:86]
+WARNING: [Synth 8-6901] identifier 'rom_inst_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:86]
+WARNING: [Synth 8-6901] identifier 'inst_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:87]
+WARNING: [Synth 8-6901] identifier 'inst_rdata' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:87]
+WARNING: [Synth 8-6901] identifier 'rom_inst_rdata' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:87]
+WARNING: [Synth 8-6901] identifier 'data_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:88]
+WARNING: [Synth 8-6901] identifier 'data_roaddr' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:88]
+WARNING: [Synth 8-6901] identifier 'device_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:89]
+WARNING: [Synth 8-6901] identifier 'device_roaddr' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:89]
+WARNING: [Synth 8-6901] identifier 'rom_data_roaddr' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:90]
+WARNING: [Synth 8-6901] identifier 'data_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:91]
+WARNING: [Synth 8-6901] identifier 'data_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:91]
+WARNING: [Synth 8-6901] identifier 'device_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:92]
+WARNING: [Synth 8-6901] identifier 'device_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:92]
+WARNING: [Synth 8-6901] identifier 'rom_data_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:93]
+WARNING: [Synth 8-6901] identifier 'data_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:94]
+WARNING: [Synth 8-6901] identifier 'data_rdata' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:94]
+WARNING: [Synth 8-6901] identifier 'device_rvalid' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:95]
+WARNING: [Synth 8-6901] identifier 'device_rdata' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:95]
+WARNING: [Synth 8-6901] identifier 'rom_data_rdata' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:96]
+WARNING: [Synth 8-6901] identifier 'mtvec' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/register/std_csr.v:43]
+WARNING: [Synth 8-6901] identifier 'mtvec' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/register/std_csr.v:44]
+WARNING: [Synth 8-6901] identifier 'mstatus' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/register/std_csr.v:45]
+WARNING: [Synth 8-6901] identifier 'sr_next_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:66]
+WARNING: [Synth 8-6901] identifier 'S_SR_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:66]
+WARNING: [Synth 8-6901] identifier 'sw_next_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:66]
+WARNING: [Synth 8-6901] identifier 'S_SW_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:66]
+WARNING: [Synth 8-6901] identifier 'sr_next_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:81]
+WARNING: [Synth 8-6901] identifier 'S_SR_IDLE' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:81]
+WARNING: [Synth 8-6901] identifier 'rdata_cache' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:84]
+WARNING: [Synth 8-6901] identifier 'sw_state' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:132]
+WARNING: [Synth 8-6901] identifier 'S_SW_FINISH' is used before its declaration [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:132]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1979.824 ; gain = 371.699 ; free physical = 23526 ; free virtual = 28734
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1404.060; parent = 1200.150; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2948.027; parent = 1983.797; children = 964.230
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1979.750 ; gain = 371.699 ; free physical = 21349 ; free virtual = 27380
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1303.686; parent = 1135.573; children = 168.112
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2989.895; parent = 1983.723; children = 1006.172
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_cpu_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ip/design_1_cpu_0_0/synth/design_1_cpu_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'cpu' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/cpu.v:1]
-INFO: [Synth 8-6085] Hierarchical reference on 'registers' stops possible memory inference [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/register/std_rv32i.v:71]
-INFO: [Synth 8-6157] synthesizing module 'mem_axi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:1]
-INFO: [Synth 8-6157] synthesizing module 'interconnect_axi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/interconnect.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'interconnect_axi' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/interconnect.v:1]
-INFO: [Synth 8-6157] synthesizing module 'rom_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/utils/rom/rom_dualport.v:1]
-INFO: [Synth 8-3876] $readmem data file 'bootrom.mem' is read successfully [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/utils/rom/rom_dualport.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'rom_dualport' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/utils/rom/rom_dualport.v:1]
-WARNING: [Synth 8-689] width (32) of port connection 'A_RIADDR' does not match port width (12) of module 'rom_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:263]
-WARNING: [Synth 8-689] width (10) of port connection 'A_ROADDR' does not match port width (12) of module 'rom_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:264]
-WARNING: [Synth 8-689] width (32) of port connection 'B_RIADDR' does not match port width (12) of module 'rom_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:269]
-WARNING: [Synth 8-689] width (10) of port connection 'B_ROADDR' does not match port width (12) of module 'rom_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:270]
-INFO: [Synth 8-6157] synthesizing module 'cache_axi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:1]
-INFO: [Synth 8-6157] synthesizing module 'ram_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/utils/ram/ram_dualport.v:1]
-INFO: [Synth 8-6157] synthesizing module 'ram_dualport_combine_wrdata' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/utils/ram/ram_dualport.v:88]
-INFO: [Synth 8-6155] done synthesizing module 'ram_dualport_combine_wrdata' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/utils/ram/ram_dualport.v:88]
-WARNING: [Synth 8-689] width (5) of port connection 'STRB' does not match port width (4) of module 'ram_dualport_combine_wrdata' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/utils/ram/ram_dualport.v:56]
-INFO: [Synth 8-6155] done synthesizing module 'ram_dualport' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/utils/ram/ram_dualport.v:1]
-INFO: [Synth 8-226] default block is never used [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:186]
-INFO: [Synth 8-226] default block is never used [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:301]
-INFO: [Synth 8-6155] done synthesizing module 'cache_axi' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/cache.v:1]
-INFO: [Synth 8-6157] synthesizing module 'translate_axi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:1]
-INFO: [Synth 8-226] default block is never used [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:112]
-INFO: [Synth 8-226] default block is never used [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:179]
-INFO: [Synth 8-6155] done synthesizing module 'translate_axi' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/translate.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'mem_axi' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/axi/mem.v:1]
-INFO: [Synth 8-6157] synthesizing module 'plic' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/peripherals/plic.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'plic' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/peripherals/plic.v:1]
-INFO: [Synth 8-6157] synthesizing module 'clint' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/peripherals/clint.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/peripherals/clint.v:57]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/peripherals/clint.v:94]
-INFO: [Synth 8-6155] done synthesizing module 'clint' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/peripherals/clint.v:1]
-INFO: [Synth 8-6157] synthesizing module 'core' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:1]
-INFO: [Synth 8-6157] synthesizing module 'mmu' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/mmu.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'mmu' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/mmu.v:1]
-INFO: [Synth 8-6157] synthesizing module 'main' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:1]
-INFO: [Synth 8-6157] synthesizing module 'fetch' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/fetch.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'fetch' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/fetch.v:1]
-INFO: [Synth 8-6157] synthesizing module 'decode' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/decode.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'decode' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/decode.v:1]
-INFO: [Synth 8-6157] synthesizing module 'check' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/check.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'check' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/check.v:1]
-INFO: [Synth 8-6157] synthesizing module 'reg_std_csr' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/register/std_csr.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'reg_std_csr' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/register/std_csr.v:1]
-INFO: [Synth 8-6157] synthesizing module 'reg_std_rv32i' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/register/std_rv32i.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'reg_std_rv32i' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/register/std_rv32i.v:1]
-INFO: [Synth 8-6157] synthesizing module 'exec' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/exec.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'exec' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/exec.v:1]
-INFO: [Synth 8-6157] synthesizing module 'mread' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/mread.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'mread' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/mread.v:1]
-INFO: [Synth 8-6157] synthesizing module 'trap' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/trap.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'trap' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/trap.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/main.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'core' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/core.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'cpu' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/cpu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/cpu.v:1]
+INFO: [Synth 8-6085] Hierarchical reference on 'registers' stops possible memory inference [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/register/std_rv32i.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mem_axi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_axi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/interconnect.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_axi' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/interconnect.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rom_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/utils/rom/rom_dualport.v:1]
+INFO: [Synth 8-3876] $readmem data file 'bootrom.mem' is read successfully [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/utils/rom/rom_dualport.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'rom_dualport' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/utils/rom/rom_dualport.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'A_RIADDR' does not match port width (12) of module 'rom_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:263]
+WARNING: [Synth 8-689] width (10) of port connection 'A_ROADDR' does not match port width (12) of module 'rom_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:264]
+WARNING: [Synth 8-689] width (32) of port connection 'B_RIADDR' does not match port width (12) of module 'rom_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:269]
+WARNING: [Synth 8-689] width (10) of port connection 'B_ROADDR' does not match port width (12) of module 'rom_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:270]
+INFO: [Synth 8-6157] synthesizing module 'cache_axi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ram_dualport' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/utils/ram/ram_dualport.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ram_dualport_combine_wrdata' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/utils/ram/ram_dualport.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'ram_dualport_combine_wrdata' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/utils/ram/ram_dualport.v:88]
+WARNING: [Synth 8-689] width (5) of port connection 'STRB' does not match port width (4) of module 'ram_dualport_combine_wrdata' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/utils/ram/ram_dualport.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'ram_dualport' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/utils/ram/ram_dualport.v:1]
+INFO: [Synth 8-226] default block is never used [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:186]
+INFO: [Synth 8-226] default block is never used [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:301]
+INFO: [Synth 8-6155] done synthesizing module 'cache_axi' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/cache.v:1]
+INFO: [Synth 8-6157] synthesizing module 'translate_axi' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:1]
+INFO: [Synth 8-226] default block is never used [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:112]
+INFO: [Synth 8-226] default block is never used [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'translate_axi' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/translate.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_axi' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/axi/mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'plic' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/peripherals/plic.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'plic' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/peripherals/plic.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clint' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/peripherals/clint.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/peripherals/clint.v:57]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/peripherals/clint.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'clint' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/peripherals/clint.v:1]
+INFO: [Synth 8-6157] synthesizing module 'core' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mmu' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/mmu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mmu' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/mmu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'main' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/fetch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/fetch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decode' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/decode.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decode' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/decode.v:1]
+INFO: [Synth 8-6157] synthesizing module 'check' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/check.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'check' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/check.v:1]
+INFO: [Synth 8-6157] synthesizing module 'reg_std_csr' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/register/std_csr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reg_std_csr' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/register/std_csr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'reg_std_rv32i' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/register/std_rv32i.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reg_std_rv32i' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/register/std_rv32i.v:1]
+INFO: [Synth 8-6157] synthesizing module 'exec' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/exec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'exec' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/exec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mread' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/mread.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mread' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/mread.v:1]
+INFO: [Synth 8-6157] synthesizing module 'trap' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/trap.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'trap' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/trap.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/main.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'core' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/core.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/cpu.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_cpu_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ip/design_1_cpu_0_0/synth/design_1_cpu_0_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element rs2_addr_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/core/components/pipeline/exec.v:63]
+WARNING: [Synth 8-6014] Unused sequential element rs2_addr_reg was removed.  [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/core/components/pipeline/exec.v:63]
 WARNING: [Synth 8-7129] Port DATA_ROADDR[31] in module mread is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DATA_ROADDR[30] in module mread is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DATA_ROADDR[29] in module mread is either unconnected or has no load
@@ -434,57 +434,57 @@ WARNING: [Synth 8-7129] Port RST in module rom_dualport is either unconnected or
 WARNING: [Synth 8-7129] Port M_AXI_BUSER in module interconnect_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_RUSER in module interconnect_axi is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2069.762 ; gain = 461.637 ; free physical = 23558 ; free virtual = 28767
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1404.060; parent = 1200.150; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3033.996; parent = 2069.766; children = 964.230
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2070.688 ; gain = 462.637 ; free physical = 21183 ; free virtual = 27216
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1303.686; parent = 1135.573; children = 168.112
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3076.863; parent = 2070.691; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2087.574 ; gain = 479.449 ; free physical = 23558 ; free virtual = 28766
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1404.060; parent = 1200.150; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3051.809; parent = 2087.578; children = 964.230
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2088.500 ; gain = 480.449 ; free physical = 21183 ; free virtual = 27216
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1303.686; parent = 1135.573; children = 168.112
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3094.676; parent = 2088.504; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2087.574 ; gain = 479.449 ; free physical = 23558 ; free virtual = 28766
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1404.060; parent = 1200.150; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3051.809; parent = 2087.578; children = 964.230
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2088.500 ; gain = 480.449 ; free physical = 21183 ; free virtual = 27216
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1303.686; parent = 1135.573; children = 168.112
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3094.676; parent = 2088.504; children = 1006.172
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2087.574 ; gain = 0.000 ; free physical = 23558 ; free virtual = 28766
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2088.500 ; gain = 0.000 ; free physical = 21183 ; free virtual = 27216
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2246.324 ; gain = 0.000 ; free physical = 23512 ; free virtual = 28721
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2245.250 ; gain = 0.000 ; free physical = 21012 ; free virtual = 27045
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2246.324 ; gain = 0.000 ; free physical = 23512 ; free virtual = 28720
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2245.250 ; gain = 0.000 ; free physical = 21012 ; free virtual = 27045
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23553 ; free virtual = 28762
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1413.169; parent = 1209.293; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 21110 ; free virtual = 27143
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1304.789; parent = 1136.714; children = 168.112
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23553 ; free virtual = 28762
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1413.169; parent = 1209.293; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 21110 ; free virtual = 27143
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1304.789; parent = 1136.714; children = 168.112
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23555 ; free virtual = 28763
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1413.169; parent = 1209.293; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 21110 ; free virtual = 27143
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1304.789; parent = 1136.714; children = 168.112
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'ac_r_state_reg' in module 'interconnect_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'ac_w_state_reg' in module 'interconnect_axi'
@@ -549,9 +549,9 @@ INFO: [Synth 8-3354] encoded FSM with state register 'sr_state_reg' using encodi
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'sw_state_reg' using encoding 'one-hot' in module 'translate_axi'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23554 ; free virtual = 28764
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1413.169; parent = 1209.293; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 21160 ; free virtual = 27199
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1304.789; parent = 1136.714; children = 168.112
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -628,8 +628,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'rom_dualport/A_ROADDR_reg' and it is trimmed from '12' to '10' bits. [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/utils/rom/rom_dualport.v:43]
-WARNING: [Synth 8-3936] Found unconnected internal register 'rom_dualport/B_ROADDR_reg' and it is trimmed from '12' to '10' bits. [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/6c7b/src/mem/utils/rom/rom_dualport.v:47]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rom_dualport/A_ROADDR_reg' and it is trimmed from '12' to '10' bits. [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/utils/rom/rom_dualport.v:43]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rom_dualport/B_ROADDR_reg' and it is trimmed from '12' to '10' bits. [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ipshared/4481/src/mem/utils/rom/rom_dualport.v:47]
 WARNING: [Synth 8-7129] Port DATA_ROADDR[31] in module mread is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DATA_ROADDR[30] in module mread is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DATA_ROADDR[29] in module mread is either unconnected or has no load
@@ -666,9 +666,9 @@ INFO: [Synth 8-3971] The signal "design_1_cpu_0_0/inst/mem/data_cache/ram_dualpo
 INFO: [Synth 8-3332] Sequential element (inst/mem/inst_cache/FSM_sequential_w_state_reg[1]) is unused and will be removed from module design_1_cpu_0_0.
 INFO: [Synth 8-3332] Sequential element (inst/mem/inst_cache/FSM_sequential_w_state_reg[0]) is unused and will be removed from module design_1_cpu_0_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23526 ; free virtual = 28746
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.186; parent = 1307.341; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22691 ; free virtual = 28736
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1488.286; parent = 1284.128; children = 204.158
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -684,17 +684,17 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23452 ; free virtual = 28672
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1545.592; parent = 1341.747; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22637 ; free virtual = 28681
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1543.643; parent = 1339.479; children = 204.163
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23443 ; free virtual = 28663
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1547.064; parent = 1343.220; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22629 ; free virtual = 28673
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1545.123; parent = 1340.960; children = 204.163
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -716,9 +716,9 @@ INFO: [Synth 8-7052] The timing for the instance inst/mem/inst_cache/ram_dualpor
 INFO: [Synth 8-7052] The timing for the instance inst/mem/data_cache/ram_dualport/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance inst/mem/data_cache/ram_dualport/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23375 ; free virtual = 28594
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1548.299; parent = 1344.454; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22567 ; free virtual = 28611
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1545.986; parent = 1341.823; children = 204.163
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -737,49 +737,49 @@ INFO: [Synth 8-4649] Removing BlackBox instance \inst/plic  of module plic havin
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23395 ; free virtual = 28614
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1549.510; parent = 1345.665; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22593 ; free virtual = 28637
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1546.467; parent = 1342.304; children = 204.163
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23395 ; free virtual = 28614
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1549.510; parent = 1345.665; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22593 ; free virtual = 28637
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1546.482; parent = 1342.319; children = 204.163
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23401 ; free virtual = 28621
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1549.510; parent = 1345.665; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22591 ; free virtual = 28635
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1547.584; parent = 1343.421; children = 204.163
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23401 ; free virtual = 28621
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1549.510; parent = 1345.665; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22591 ; free virtual = 28635
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1547.646; parent = 1343.483; children = 204.163
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23401 ; free virtual = 28621
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1549.787; parent = 1345.942; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22591 ; free virtual = 28635
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1547.990; parent = 1343.827; children = 204.163
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23401 ; free virtual = 28621
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1549.787; parent = 1345.942; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22591 ; free virtual = 28635
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1547.990; parent = 1343.827; children = 204.163
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -797,11 +797,11 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY4   |   181|
 |2     |LUT1     |    33|
-|3     |LUT2     |   459|
-|4     |LUT3     |   543|
-|5     |LUT4     |  1091|
-|6     |LUT5     |   647|
-|7     |LUT6     |  2086|
+|3     |LUT2     |   460|
+|4     |LUT3     |   564|
+|5     |LUT4     |  1093|
+|6     |LUT5     |   653|
+|7     |LUT6     |  2078|
 |8     |MUXF7    |   257|
 |9     |RAMB18E1 |     2|
 |10    |RAMB36E1 |     3|
@@ -809,31 +809,31 @@ Report Cell Usage:
 |12    |FDSE     |    63|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23401 ; free virtual = 28621
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1549.791; parent = 1345.946; children = 203.909
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3178.543; parent = 2214.312; children = 964.230
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22596 ; free virtual = 28640
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1547.990; parent = 1343.827; children = 204.163
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3219.410; parent = 2213.238; children = 1006.172
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 58 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 2246.324 ; gain = 479.449 ; free physical = 23457 ; free virtual = 28677
-Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 2246.324 ; gain = 638.199 ; free physical = 23458 ; free virtual = 28678
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 2245.250 ; gain = 480.449 ; free physical = 22651 ; free virtual = 28695
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 2245.250 ; gain = 637.199 ; free physical = 22651 ; free virtual = 28695
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2246.324 ; gain = 0.000 ; free physical = 23594 ; free virtual = 28814
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2245.250 ; gain = 0.000 ; free physical = 22753 ; free virtual = 28798
 INFO: [Netlist 29-17] Analyzing 443 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2246.324 ; gain = 0.000 ; free physical = 23555 ; free virtual = 28775
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2245.250 ; gain = 0.000 ; free physical = 22701 ; free virtual = 28746
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 90025130
+Synth Design complete, checksum: 8cf5c5cd
 INFO: [Common 17-83] Releasing license: Synthesis
 199 Infos, 283 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2246.324 ; gain = 945.566 ; free physical = 23760 ; free virtual = 28980
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:56 . Memory (MB): peak = 2245.250 ; gain = 913.629 ; free physical = 22847 ; free virtual = 28892
 INFO: [Common 17-1381] The checkpoint '/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_cpu_0_0_synth_1/design_1_cpu_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_cpu_0_0, cache-ID = 83058fdaf742cc78
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_cpu_0_0, cache-ID = ff4dc70d3635f1bf
 INFO: [Coretcl 2-1174] Renamed 20 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/design_1_cpu_0_0_synth_1/design_1_cpu_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_cpu_0_0_utilization_synth.rpt -pb design_1_cpu_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 20 00:50:00 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 23:42:30 2024...

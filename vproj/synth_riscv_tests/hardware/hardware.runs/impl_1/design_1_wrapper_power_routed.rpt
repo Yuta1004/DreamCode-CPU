@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date             : Tue Aug 20 00:53:10 2024
+| Date             : Wed Aug 21 23:44:46 2024
 | Host             : plab-imac running 64-bit Ubuntu 22.04.4 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 1.560        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.439        |
+| Dynamic (W)              | 1.438        |
 | Device Static (W)        | 0.121        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 67.0         |
@@ -53,8 +53,8 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.009 |        3 |       --- |             --- |
-| Slice Logic              |     0.011 |    12477 |       --- |             --- |
-|   LUT as Logic           |     0.010 |     5520 |     17600 |           31.36 |
+| Slice Logic              |     0.011 |    12499 |       --- |             --- |
+|   LUT as Logic           |     0.010 |     5532 |     17600 |           31.43 |
 |   CARRY4                 |    <0.001 |      222 |      4400 |            5.05 |
 |   Register               |    <0.001 |     4848 |     35200 |           13.77 |
 |   F7/F8 Muxes            |    <0.001 |      258 |     17600 |            1.47 |
@@ -62,7 +62,7 @@ Table of Contents
 |   LUT as Distributed RAM |    <0.001 |       10 |      6000 |            0.17 |
 |   LUT as Shift Register  |    <0.001 |      122 |      6000 |            2.03 |
 |   Others                 |     0.000 |      373 |       --- |             --- |
-| Signals                  |     0.014 |     8850 |       --- |             --- |
+| Signals                  |     0.014 |     8893 |       --- |             --- |
 | Block RAM                |     0.005 |        4 |        60 |            6.67 |
 | I/O                      |    <0.001 |       12 |       100 |           12.00 |
 | PS7                      |     1.400 |        1 |       --- |             --- |
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.045 |       0.038 |      0.007 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.044 |       0.038 |      0.007 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -153,7 +153,7 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| design_1_wrapper         |     1.439 |
+| design_1_wrapper         |     1.438 |
 |   design_1_i             |     1.438 |
 |     axi_interconnect_0   |     0.002 |
 |       s00_couplers       |     0.002 |

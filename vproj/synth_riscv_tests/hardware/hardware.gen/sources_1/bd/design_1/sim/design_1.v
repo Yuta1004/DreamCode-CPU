@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Tue Aug 20 00:48:40 2024
+//Date        : Wed Aug 21 23:41:11 2024
 //Host        : plab-imac running 64-bit Ubuntu 22.04.4 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -247,6 +247,7 @@ module design_1
   wire axi_interconnect_1_M02_AXI_WVALID;
   wire axi_uartlite_0_tx;
   wire [31:0]cpu_0_GP;
+  wire [31:0]cpu_0_PC;
   wire [3:0]cpu_0_STAT;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire [0:0]proc_sys_reset_0_peripheral_reset;
@@ -566,6 +567,7 @@ module design_1
         .M_AXI_WSTRB(S00_AXI_2_WSTRB),
         .M_AXI_WUSER(S00_AXI_2_WUSER),
         .M_AXI_WVALID(S00_AXI_2_WVALID),
+        .PC(cpu_0_PC),
         .RST(proc_sys_reset_0_peripheral_reset),
         .STAT(cpu_0_STAT));
   design_1_cpu_monitor_0_0 cpu_monitor_0
@@ -711,7 +713,7 @@ module design_1
         .COM_RCLK(seg7_0_COM_RCLK),
         .COM_SER(seg7_0_COM_SER),
         .COM_SRCLK(seg7_0_COM_SRCLK),
-        .DATA(cpu_0_GP),
+        .DATA(cpu_0_PC),
         .RST(proc_sys_reset_0_peripheral_reset),
         .SEG_RCLK(seg7_0_SEG_RCLK),
         .SEG_SER(seg7_0_SEG_SER),

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date         : Tue Aug 20 00:49:59 2024
+| Date         : Wed Aug 21 23:42:29 2024
 | Host         : plab-imac running 64-bit Ubuntu 22.04.4 LTS
 | Command      : report_utilization -file design_1_cpu_0_0_utilization_synth.rpt -pb design_1_cpu_0_0_utilization_synth.pb
 | Design       : design_1_cpu_0_0
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             | 4235 |     0 |          0 |     17600 | 24.06 |
-|   LUT as Logic          | 4235 |     0 |          0 |     17600 | 24.06 |
+| Slice LUTs*             | 4245 |     0 |          0 |     17600 | 24.12 |
+|   LUT as Logic          | 4245 |     0 |          0 |     17600 | 24.12 |
 |   LUT as Memory         |    0 |     0 |          0 |      6000 |  0.00 |
 | Slice Registers         | 2946 |     0 |          0 |     35200 |  8.37 |
 |   Register as Flip Flop | 2946 |     0 |          0 |     35200 |  8.37 |
@@ -151,11 +151,11 @@ Warning! LUT value is adjusted to account for LUT combining.
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     | 2883 |        Flop & Latch |
-| LUT6     | 2086 |                 LUT |
-| LUT4     | 1091 |                 LUT |
-| LUT5     |  647 |                 LUT |
-| LUT3     |  543 |                 LUT |
-| LUT2     |  459 |                 LUT |
+| LUT6     | 2078 |                 LUT |
+| LUT4     | 1093 |                 LUT |
+| LUT5     |  653 |                 LUT |
+| LUT3     |  564 |                 LUT |
+| LUT2     |  460 |                 LUT |
 | MUXF7    |  257 |               MuxFx |
 | CARRY4   |  181 |          CarryLogic |
 | FDSE     |   63 |        Flop & Latch |
