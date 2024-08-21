@@ -12,6 +12,13 @@
 #define test(ty, name) run_test(t2s(ty ## _ ## name), ty ## _ ## name ##_bin, ty ##_ ## name ## _bin_len)
 
 void setup(unsigned char *addr, unsigned char *program, size_t length) {
+	// Magic number
+	*(addr++) = 0x6f;
+	*(addr++) = 0x00;
+	*(addr++) = 0x40;
+	*(addr++) = 0x00;
+
+	// Body
 	for (int idx = 0; idx < length; ++ idx) {
 		if (idx == 4) {
 			*(addr++) = 0x6f;

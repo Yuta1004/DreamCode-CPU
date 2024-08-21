@@ -5,6 +5,13 @@
 #include "xil_cache.h"
 
 void setup(unsigned char *addr, unsigned char *program, size_t length) {
+	// Magic number
+	*(addr++) = 0x6f;
+	*(addr++) = 0x00;
+	*(addr++) = 0x40;
+	*(addr++) = 0x00;
+
+	// Body
 	for (int idx = 0; idx < length; ++ idx) {
 		*(addr++) = *(program++);
 	}
