@@ -6,9 +6,6 @@
 # Block Designs: bd/design_1/design_1.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1 || ORIG_REF_NAME==design_1} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_cpu_0_0/design_1_cpu_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_cpu_0_0 || ORIG_REF_NAME==design_1_cpu_0_0} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_cpu_monitor_0_0/design_1_cpu_monitor_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_cpu_monitor_0_0 || ORIG_REF_NAME==design_1_cpu_monitor_0_0} -quiet] -quiet
 
@@ -21,16 +18,34 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_pr
 # IP: bd/design_1/ip/design_1_axi_interconnect_0_0/design_1_axi_interconnect_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_interconnect_0_0 || ORIG_REF_NAME==design_1_axi_interconnect_0_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xbar_0 || ORIG_REF_NAME==design_1_xbar_0} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_axi_interconnect_1_0/design_1_axi_interconnect_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_interconnect_1_0 || ORIG_REF_NAME==design_1_axi_interconnect_1_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_seg7_0_0/design_1_seg7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_seg7_0_0 || ORIG_REF_NAME==design_1_seg7_0_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_gpio_0_0 || ORIG_REF_NAME==design_1_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_uartlite_0_0 || ORIG_REF_NAME==design_1_axi_uartlite_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_cpu_0_0/design_1_cpu_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_cpu_0_0 || ORIG_REF_NAME==design_1_cpu_0_0} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_1 || ORIG_REF_NAME==design_1_auto_pc_1} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_2 || ORIG_REF_NAME==design_1_auto_pc_2} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_3 || ORIG_REF_NAME==design_1_auto_pc_3} -quiet] -quiet
 
 # XDC: /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/design_1_ooc.xdc
