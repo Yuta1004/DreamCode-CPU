@@ -35,7 +35,7 @@ module trap
     reg [31:0]  fetch_pc, decode_pc, check_pc, exec_pc, trap_vec_base;
 
     always @ (posedge CLK) begin
-        if (RST || FLUSH) begin
+        if (RST) begin
             fetch_pc <= 32'b0;
             decode_pc <= 32'b0;
             check_pc <= 32'b0;
@@ -50,6 +50,19 @@ module trap
         end
         else if (MEM_WAIT) begin
             // do nothing
+        end
+        else if (FLUSH) begin
+            fetch_pc <= 32'b0;
+            decode_pc <= 32'b0;
+            check_pc <= 32'b0;
+            exec_pc <= 32'b0;
+            exec_exc_en <= 1'b0;
+            exec_exc_code <= 4'b0;
+            int_allow <= 1'b0;
+            int_en <= 1'b0;
+            int_code <= 4'b0;
+            trap_vec_mode <= 2'b0;
+            trap_vec_base <= 32'b0;
         end
         else begin
             fetch_pc <= FETCH_PC;

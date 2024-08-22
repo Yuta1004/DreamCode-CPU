@@ -2,16 +2,16 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Aug 21 23:42:35 2024
-# Process ID: 69453
+# Start of session at: Thu Aug 22 19:43:06 2024
+# Process ID: 134469
 # Current directory: /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/design_1_wrapper.vds
 # Journal file: /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/vivado.jou
-# Running On: plab-imac, OS: Linux, CPU Frequency: 4383.830 MHz, CPU Physical cores: 4, Host memory: 33593 MB
+# Running On: plab-imac, OS: Linux, CPU Frequency: 4193.438 MHz, CPU Physical cores: 4, Host memory: 33593 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1271.070 ; gain = 0.023 ; free physical = 23432 ; free virtual = 29479
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1269.102 ; gain = 0.023 ; free physical = 21304 ; free virtual = 27928
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nakagami/Develop/project/DreamCode/cpu/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nakagami/Xilinx/Vivado/2022.2/data/ip'.
@@ -27,70 +27,70 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 69520
+INFO: [Synth 8-7075] Helper process launched with PID 134525
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/nakagami/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1997.809 ; gain = 372.738 ; free physical = 22565 ; free virtual = 28612
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1422.932; parent = 1219.026; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3007.957; parent = 2001.781; children = 1006.176
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1998.254 ; gain = 372.738 ; free physical = 20426 ; free virtual = 27049
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1354.905; parent = 1173.315; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2965.453; parent = 2001.227; children = 964.227
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_axi_gpio_0_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:723]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:3405]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_auto_pc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_auto_pc_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:3405]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:723]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_1_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:1038]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1FDLJBY' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2072]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_auto_pc_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_auto_pc_1_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awuser' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2411]
 WARNING: [Synth 8-7071] port 'm_axi_wuser' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2411]
 WARNING: [Synth 8-7071] port 'm_axi_aruser' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2411]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_1' has 87 connections declared, but only 84 given [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2411]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1FDLJBY' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2072]
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_NZRVUN' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2498]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_auto_pc_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_auto_pc_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_auto_pc_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_auto_pc_2_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2737]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2737]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_2' has 60 connections declared, but only 58 given [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2737]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_NZRVUN' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2498]
 INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1GFU8IL' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2798]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_auto_pc_3_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_auto_pc_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_auto_pc_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_auto_pc_3_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:3037]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:3037]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_3' has 60 connections declared, but only 58 given [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:3037]
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1GFU8IL' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2798]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_HS4N6K' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:3098]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_HS4N6K' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:3098]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_xbar_0_stub.v:5]
 WARNING: [Synth 8-689] width (1) of port connection 'm_axi_aruser' does not match port width (3) of module 'design_1_xbar_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:1995]
 WARNING: [Synth 8-689] width (1) of port connection 'm_axi_awuser' does not match port width (3) of module 'design_1_xbar_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2008]
 WARNING: [Synth 8-689] width (1) of port connection 'm_axi_wuser' does not match port width (3) of module 'design_1_xbar_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:2026]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_1_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_axi_uartlite_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:503]
 WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' has 22 connections declared, but only 21 given [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:503]
-INFO: [Synth 8-6157] synthesizing module 'design_1_cpu_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_cpu_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_cpu_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_cpu_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_cpu_monitor_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_cpu_monitor_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_cpu_monitor_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_cpu_monitor_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_proc_sys_reset_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_proc_sys_reset_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_cpu_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_cpu_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cpu_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_cpu_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_cpu_monitor_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_cpu_monitor_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cpu_monitor_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_cpu_monitor_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_proc_sys_reset_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_proc_sys_reset_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:598]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:598]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:598]
 WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:598]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_processing_system7_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_processing_system7_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_processing_system7_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_processing_system7_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:606]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:606]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:606]
@@ -98,8 +98,8 @@ WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_s
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:606]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:606]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 110 connections declared, but only 104 given [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:606]
-INFO: [Synth 8-6157] synthesizing module 'design_1_seg7_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_seg7_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_seg7_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-69453-plab-imac/realtime/design_1_seg7_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_seg7_0_0' [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_seg7_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_seg7_0_0' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/.Xil/Vivado-134469-plab-imac/realtime/design_1_seg7_0_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/synth/design_1.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_HS4N6K is either unconnected or has no load
@@ -135,24 +135,24 @@ WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_O7FAN0 is eith
 WARNING: [Synth 8-7129] Port ACLK in module design_1_axi_interconnect_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module design_1_axi_interconnect_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2071.746 ; gain = 446.676 ; free physical = 22587 ; free virtual = 28635
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1422.932; parent = 1219.026; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3077.926; parent = 2071.750; children = 1006.176
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2071.191 ; gain = 445.676 ; free physical = 20354 ; free virtual = 26979
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1354.905; parent = 1173.315; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3035.422; parent = 2071.195; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2089.559 ; gain = 464.488 ; free physical = 22587 ; free virtual = 28635
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1422.932; parent = 1219.026; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3095.738; parent = 2089.562; children = 1006.176
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2089.004 ; gain = 463.488 ; free physical = 20354 ; free virtual = 26979
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1354.905; parent = 1173.315; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3053.234; parent = 2089.008; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2089.559 ; gain = 464.488 ; free physical = 22587 ; free virtual = 28635
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1422.932; parent = 1219.026; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3095.738; parent = 2089.562; children = 1006.176
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2089.004 ; gain = 463.488 ; free physical = 20354 ; free virtual = 26979
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1354.905; parent = 1173.315; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3053.234; parent = 2089.008; children = 964.227
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2089.559 ; gain = 0.000 ; free physical = 22587 ; free virtual = 28635
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2089.004 ; gain = 0.000 ; free physical = 20354 ; free virtual = 26979
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -189,27 +189,27 @@ Parsing XDC File [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv
 Finished Parsing XDC File [/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2165.465 ; gain = 0.000 ; free physical = 22583 ; free virtual = 28631
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2164.910 ; gain = 0.000 ; free physical = 20373 ; free virtual = 26998
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2165.465 ; gain = 0.000 ; free physical = 22583 ; free virtual = 28631
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2164.910 ; gain = 0.000 ; free physical = 20373 ; free virtual = 26998
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/nakagami/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22582 ; free virtual = 28630
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1465.072; parent = 1261.204; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20489 ; free virtual = 27114
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1357.951; parent = 1176.395; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22582 ; free virtual = 28630
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1465.072; parent = 1261.204; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20489 ; free virtual = 27114
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1357.951; parent = 1176.395; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -490,14 +490,14 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constrain
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/cpu_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22582 ; free virtual = 28630
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1465.072; parent = 1261.204; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20484 ; free virtual = 27108
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1357.951; parent = 1176.395; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22581 ; free virtual = 28630
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1465.072; parent = 1261.204; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20483 ; free virtual = 27109
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1357.951; parent = 1176.395; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -544,33 +544,33 @@ WARNING: [Synth 8-7129] Port ARESETN in module design_1_axi_interconnect_0_0 is 
 WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_axi_interconnect_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_axi_interconnect_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22586 ; free virtual = 28640
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1465.072; parent = 1261.204; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20504 ; free virtual = 27134
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1357.951; parent = 1176.395; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22575 ; free virtual = 28628
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1509.131; parent = 1305.294; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20429 ; free virtual = 27059
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1440.877; parent = 1259.352; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22577 ; free virtual = 28630
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1509.396; parent = 1305.560; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20429 ; free virtual = 27059
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1441.143; parent = 1259.617; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22561 ; free virtual = 28615
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1510.490; parent = 1306.653; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20406 ; free virtual = 27036
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1442.236; parent = 1260.711; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -588,49 +588,49 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22585 ; free virtual = 28638
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1510.646; parent = 1306.810; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20421 ; free virtual = 27051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1442.416; parent = 1260.891; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22585 ; free virtual = 28638
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1510.646; parent = 1306.810; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20421 ; free virtual = 27051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1442.416; parent = 1260.891; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22585 ; free virtual = 28638
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1510.689; parent = 1306.853; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20421 ; free virtual = 27051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1442.459; parent = 1260.934; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22585 ; free virtual = 28638
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1510.756; parent = 1306.919; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20421 ; free virtual = 27051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1442.525; parent = 1261.000; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22585 ; free virtual = 28638
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1510.779; parent = 1306.942; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20421 ; free virtual = 27051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1442.525; parent = 1261.000; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22585 ; free virtual = 28638
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1510.795; parent = 1306.958; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20421 ; free virtual = 27051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1442.541; parent = 1261.016; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -671,18 +671,18 @@ Report Cell Usage:
 |14    |OBUF                          |     7|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22585 ; free virtual = 28638
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1510.826; parent = 1306.989; children = 203.905
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3139.629; parent = 2133.453; children = 1006.176
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20421 ; free virtual = 27051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1442.572; parent = 1261.047; children = 181.590
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3097.125; parent = 2132.898; children = 964.227
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2165.465 ; gain = 464.488 ; free physical = 22614 ; free virtual = 28668
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2165.465 ; gain = 540.395 ; free physical = 22614 ; free virtual = 28668
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2164.910 ; gain = 463.488 ; free physical = 20471 ; free virtual = 27101
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2164.910 ; gain = 539.395 ; free physical = 20471 ; free virtual = 27101
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2165.465 ; gain = 0.000 ; free physical = 22733 ; free virtual = 28786
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2164.910 ; gain = 0.000 ; free physical = 20599 ; free virtual = 27229
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2165.465 ; gain = 0.000 ; free physical = 22708 ; free virtual = 28761
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2164.910 ; gain = 0.000 ; free physical = 20563 ; free virtual = 27193
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -690,7 +690,7 @@ Synth Design complete, checksum: 593be1c5
 INFO: [Common 17-83] Releasing license: Synthesis
 66 Infos, 83 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 2165.465 ; gain = 852.762 ; free physical = 22827 ; free virtual = 28880
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2164.910 ; gain = 850.730 ; free physical = 20726 ; free virtual = 27356
 INFO: [Common 17-1381] The checkpoint '/home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 23:43:10 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 22 19:43:48 2024...

@@ -54,7 +54,7 @@ module exec
     assign rs2_data_s = rs2_data;
 
     always @ (posedge CLK) begin
-        if (RST || FLUSH) begin
+        if (RST) begin
             pc <= 32'b0;
             opcode <= 17'b0;
             rd_addr <= 5'b0;
@@ -69,7 +69,7 @@ module exec
         else if (MEM_WAIT) begin
             // do nothing
         end
-        else if (STALL) begin
+        else if (FLUSH || STALL) begin
             pc <= 32'b0;
             opcode <= 17'b0;
             rd_addr <= 5'b0;

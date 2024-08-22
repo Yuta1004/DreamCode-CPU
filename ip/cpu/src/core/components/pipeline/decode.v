@@ -25,11 +25,18 @@ module decode
     reg [31:0] pc, inst;
 
     always @ (posedge CLK) begin
-        if (RST || FLUSH) begin
+        if (RST) begin
             pc <= 32'b0;
             inst <= 32'h0000_0013;
         end
-        else if (STALL || MEM_WAIT) begin
+        else if (MEM_WAIT) begin
+            // do nothing
+        end
+        else if (FLUSH) begin
+            pc <= 32'b0;
+            inst <= 32'h0000_0013;
+        end
+        else if (STALL) begin
             // do nothing
         end
         else begin

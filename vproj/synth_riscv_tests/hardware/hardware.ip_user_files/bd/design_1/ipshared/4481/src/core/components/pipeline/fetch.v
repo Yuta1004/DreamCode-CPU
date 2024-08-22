@@ -32,9 +32,12 @@ module fetch
     always @ (posedge CLK) begin
         if (RST)
             pc <= START_ADDR;
+        else if (MEM_WAIT) begin
+            // do nothing
+        end
         else if (FLUSH)
             pc <= FLUSH_PC;
-        else if (STALL || MEM_WAIT) begin
+        else if (STALL) begin
             // do nothing
         end
         else

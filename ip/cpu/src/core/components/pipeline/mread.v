@@ -57,7 +57,7 @@ module mread
     reg [3:0]   mem_r_strb, mem_w_strb;
 
     always @ (posedge CLK) begin
-        if (RST || FLUSH) begin
+        if (RST) begin
             reg_w_rd <= 5'b0;
             reg_w_data <= 32'b0;
             csr_w_en <= 1'b0;
@@ -77,6 +77,24 @@ module mread
         end
         else if (MEM_WAIT) begin
             // do nothing
+        end
+        else if (FLUSH) begin
+            reg_w_rd <= 5'b0;
+            reg_w_data <= 32'b0;
+            csr_w_en <= 1'b0;
+            csr_w_addr <= 12'b0;
+            csr_w_data <= 32'b0;
+            mem_r_en <= 1'b0;
+            mem_r_rd <= 5'b0;
+            mem_r_addr <= 32'b0;
+            mem_r_strb <= 4'b0;
+            mem_r_signed <= 1'b0;
+            mem_w_en <= 1'b0;
+            mem_w_addr <= 32'b0;
+            mem_w_strb <= 4'b0;
+            mem_w_data <= 32'b0;
+            jmp_do <= 1'b0;
+            jmp_pc <= 32'b0;
         end
         else begin
             reg_w_rd <= REG_W_RD;

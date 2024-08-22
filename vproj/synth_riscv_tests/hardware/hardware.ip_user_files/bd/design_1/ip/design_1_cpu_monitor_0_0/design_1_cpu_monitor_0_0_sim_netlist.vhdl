@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
--- Date        : Mon Aug 19 02:47:40 2024
+-- Date        : Mon Aug 19 02:47:38 2024
 -- Host        : plab-imac running 64-bit Ubuntu 22.04.4 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ip/design_1_cpu_monitor_0_0/design_1_cpu_monitor_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_cpu_monitor_0_0 -prefix
+--               design_1_cpu_monitor_0_0_ design_1_cpu_monitor_0_0_sim_netlist.vhdl
 -- Design      : design_1_cpu_monitor_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -26,8 +26,6 @@ entity design_1_cpu_monitor_0_0_cpu_monitor_controller_auto_generated is
     S_AXI_ACLK : in STD_LOGIC;
     GP : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_cpu_monitor_0_0_cpu_monitor_controller_auto_generated : entity is "cpu_monitor_controller_auto_generated";
 end design_1_cpu_monitor_0_0_cpu_monitor_controller_auto_generated;
 
 architecture STRUCTURE of design_1_cpu_monitor_0_0_cpu_monitor_controller_auto_generated is
@@ -1077,8 +1075,6 @@ entity design_1_cpu_monitor_0_0_cpu_monitor_controller_AXI is
     S_AXI_ARVALID : in STD_LOGIC;
     S_AXI_RREADY : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_cpu_monitor_0_0_cpu_monitor_controller_AXI : entity is "cpu_monitor_controller_AXI";
 end design_1_cpu_monitor_0_0_cpu_monitor_controller_AXI;
 
 architecture STRUCTURE of design_1_cpu_monitor_0_0_cpu_monitor_controller_AXI is
@@ -1582,8 +1578,6 @@ entity design_1_cpu_monitor_0_0_cpu_monitor_controller is
     S_AXI_ARVALID : in STD_LOGIC;
     S_AXI_RREADY : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_cpu_monitor_0_0_cpu_monitor_controller : entity is "cpu_monitor_controller";
 end design_1_cpu_monitor_0_0_cpu_monitor_controller;
 
 architecture STRUCTURE of design_1_cpu_monitor_0_0_cpu_monitor_controller is

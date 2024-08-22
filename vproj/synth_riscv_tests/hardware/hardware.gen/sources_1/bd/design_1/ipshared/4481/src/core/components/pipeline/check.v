@@ -33,7 +33,7 @@ module check
     reg [4:0]   rd, rs1, rs2;
 
     always @ (posedge CLK) begin
-        if (RST || FLUSH) begin
+        if (RST) begin
             pc <= 'b0;
             opcode <= 'b0;
             rd <= 'b0;
@@ -42,7 +42,19 @@ module check
             csr <= 12'b0;
             imm <= 32'b0;
         end
-        else if (STALL || MEM_WAIT) begin
+        else if (MEM_WAIT) begin
+            // do nothing
+        end
+        else if (FLUSH) begin
+            pc <= 'b0;
+            opcode <= 'b0;
+            rd <= 'b0;
+            rs1 <= 'b0;
+            rs2 <= 'b0;
+            csr <= 12'b0;
+            imm <= 32'b0;
+        end
+        else if (STALL) begin
             // do nothing
         end
         else begin

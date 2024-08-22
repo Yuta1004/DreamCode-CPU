@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-// Date        : Mon Aug 19 03:01:50 2024
+// Date        : Mon Aug 19 03:01:49 2024
 // Host        : plab-imac running 64-bit Ubuntu 22.04.4 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/nakagami/Develop/project/DreamCode/cpu/vproj/synth_riscv_tests/hardware/hardware.gen/sources_1/bd/design_1/ip/design_1_seg7_0_0/design_1_seg7_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_seg7_0_0 -prefix
+//               design_1_seg7_0_0_ design_1_seg7_0_0_sim_netlist.v
 // Design      : design_1_seg7_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -56,7 +56,6 @@ module design_1_seg7_0_0
         .SEG_SRCLK(SEG_SRCLK));
 endmodule
 
-(* ORIG_REF_NAME = "seg7" *) 
 module design_1_seg7_0_0_seg7
    (COM_RCLK,
     SEG_SRCLK,
